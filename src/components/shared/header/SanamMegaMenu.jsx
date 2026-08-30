@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { useState, useMemo } from "react";
-import catalogData from "@/data/allCategoriesCatalog.json";
+import liveCategories from "@/data/liveCategories.json";
 
-const DEFAULT_CATEGORIES = catalogData?.data || [];
+const DEFAULT_CATEGORIES = liveCategories || [];
 
 const SanamMegaMenu = ({ categories = [], onClose }) => {
   // "featured" or numeric category id
   const [activeTab, setActiveTab] = useState("featured");
 
-  // Always use live categories or bundled 23 categories
+  // Always use live categories or bundled 24 categories
   const categoryList = useMemo(() => {
     if (Array.isArray(categories) && categories.length >= 10) {
       return categories;

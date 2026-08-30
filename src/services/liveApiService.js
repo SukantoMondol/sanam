@@ -333,13 +333,32 @@ export async function fetchLiveProductDetails(productIdOrSlug) {
     const price = oldPrice > retailPrice ? oldPrice : retailPrice;
     const discount = oldPrice > retailPrice ? oldPrice - retailPrice : 0;
 
-    const gallery = [
-      ...(details?.imageUrl_large ? [{ id: 1, photo: formatImageUrl(details.imageUrl_large) }] : []),
-      ...(details?.gallery || []).map((g, idx) => ({
-        id: idx + 2,
-        photo: formatImageUrl(g?.image || g),
-      })),
+    const mainPhotoLarge = formatImageUrl(details?.imageUrl_large || details?.imageUrl_small);
+    const mainPhotoSmall = formatImageUrl(details?.imageUrl_small || details?.imageUrl_large);
+
+    const photos = [
+      {
+        id: 1,
+        photo_full: mainPhotoLarge,
+        photo_thumb: mainPhotoSmall,
+        alt_text: details?.title || "Product Image",
+      },
     ];
+
+    if (Array.isArray(details?.gallery)) {
+      details.gallery.forEach((g, idx) => {
+        const fullUrl = formatImageUrl(g?.large || g?.image || g?.photo || (typeof g === "string" ? g : null));
+        const thumbUrl = formatImageUrl(g?.small || g?.thumb || g?.image || (typeof g === "string" ? g : null));
+        if (fullUrl && fullUrl !== mainPhotoLarge) {
+          photos.push({
+            id: idx + 2,
+            photo_full: fullUrl,
+            photo_thumb: thumbUrl || fullUrl,
+            alt_text: `${details?.title} - view ${idx + 2}`,
+          });
+        }
+      });
+    }
 
     return {
       product: {
@@ -348,9 +367,10 @@ export async function fetchLiveProductDetails(productIdOrSlug) {
         title: details?.title,
         slug: String(details?.id),
         sku: details?.item_code || details?.sku_no || `SKU-${details?.id}`,
-        photo: formatImageUrl(details?.imageUrl_large || details?.imageUrl_small),
+        photo: mainPhotoLarge,
         photo_alt: details?.title,
-        gallery: gallery.length > 0 ? gallery : [{ id: 1, photo: formatImageUrl(details?.imageUrl_small) }],
+        photos: photos,
+        gallery: photos,
         price: {
           price: price,
           payable_price: retailPrice,
@@ -368,7 +388,7 @@ export async function fetchLiveProductDetails(productIdOrSlug) {
         seo: {
           title: details?.title,
           description: details?.title,
-          og_image: formatImageUrl(details?.imageUrl_large),
+          og_image: mainPhotoLarge,
         },
       },
       bread_crumb: [
