@@ -38,44 +38,22 @@ export async function generateMetadata() {
 
 export const revalidate = 600; // Revalidate every 10 minutes
 
+import { fetchLiveHomeData } from "@/services/liveApiService";
+
 const getGeneralSettings = cache(async () => {
-  try {
-    const generalSettings = await axiosInstance.get(`/general-settings`);
-    if (generalSettings?.data.status_code == 460) {
-      console.warn("Home general settings returned 460; using fallback values");
-      return {
-        default_page_title:
-          process.env.NEXT_PUBLIC_SITE_NAME || "Sanam Store",
-        default_meta_description: `Shop modern and stylish furniture in Kuwait at ${
-          process.env.NEXT_PUBLIC_SITE_NAME || "Sanam Store"
-        }.`,
-        logo: "/assets/images/logo.png",
-        hotline_number: "",
-      };
-    }
-    return generalSettings.data.data;
-  } catch (error) {
-    console.error("getGeneralSettings error:", error);
-    return {
-      default_page_title:
-        process.env.NEXT_PUBLIC_SITE_NAME || "Sanam Store",
-      default_meta_description: `Shop modern and stylish furniture in Kuwait at ${
-        process.env.NEXT_PUBLIC_SITE_NAME || "Sanam Store"
-      }.`,
-      logo: "/assets/images/logo.png",
-      hotline_number: "",
-    };
-  }
+  return {
+    default_page_title: process.env.NEXT_PUBLIC_SITE_NAME || "Sanam Store",
+    default_meta_description: "Shop quality products in Kuwait at Sanam Store. Fast delivery and best prices.",
+    logo: "/assets/images/logo.png",
+    hotline_number: "+965 99330508",
+  };
 });
 
-// Preload home data for parallel fetching
+// Preload home data directly from live backend
 const preloadHomeData = cache(async () => {
   try {
-    const homeData = await axiosInstance.get(`/home-page`);
-    if (homeData?.data.status_code == 460) {
-      throw new Error("404-Page Not Found");
-    }
-    return homeData.data.data;
+    const data = await fetchLiveHomeData();
+    return data;
   } catch (error) {
     console.error("HomeComponent preloadHomeData error:", error);
     return {

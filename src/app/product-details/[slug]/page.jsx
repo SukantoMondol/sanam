@@ -47,20 +47,17 @@ export async function generateMetadata({ params }) {
   };
 }
 
+import { fetchLiveProductDetails } from "@/services/liveApiService";
+
 const fetchProductDetailsPageData = cache(async (slug) => {
   try {
-    const response = await axiosInstance.get(`/product-details/${slug}`);
-    if (
-      response?.data.status_code == 460 ||
-      response?.data.status_code == 404
-    ) {
+    const data = await fetchLiveProductDetails(slug);
+    if (!data || !data.product) {
       notFound();
-      // throw new Error('404-Page Not Found');
     }
-    return response?.data?.data;
+    return data;
   } catch (error) {
     notFound();
-    // throw new Error(error?.message);
   }
 });
 

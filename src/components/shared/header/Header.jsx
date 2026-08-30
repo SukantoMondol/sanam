@@ -166,15 +166,8 @@ export default function Header() {
   }, []);
 
   const getCategories = useCallback(() => {
-    let baseUrl =
-      process.env.NEXT_PUBLIC_BASE_URL ||
-      "http://127.0.0.1:8000/api/furniture";
-    if (typeof window !== "undefined") {
-      const hostname = window.location.hostname;
-      baseUrl = baseUrl.replace(/127\.0\.0\.1|localhost/, hostname);
-    }
     axios
-      .get(`${baseUrl}/category_list-hierarchy`)
+      .get(`/api/category_list-hierarchy`)
       .then((res) => {
         if (res.data?.data && Array.isArray(res.data.data)) {
           setCategories(res.data.data);
