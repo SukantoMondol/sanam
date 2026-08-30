@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Upholstered Barrel Back Dining Chair",
+    "priceRange": "$399 - $579",
+    "image": "/assets/images/Categories/f-2.png",
+    "colors": ["#E5E5E5", "#D3D3D3", "#C0C0C0"],
+    "isContractGrade": true
+  },
+  {
+    "id": 1,
+    "name": "Upholstered Barrel Back Dining Chair",
+    "priceRange": "$399 - $579",
+    "image": "/assets/images/Categories/f-2.png",
+    "colors": ["#E5E5E5", "#D3D3D3", "#C0C0C0"],
+    "isContractGrade": true
+  },
+  {
+    "id": 1,
+    "name": "Upholstered Barrel Back Dining Chair",
+    "priceRange": "$399 - $579",
+    "image": "/assets/images/Categories/f-2.png",
+    "colors": ["#E5E5E5", "#D3D3D3", "#C0C0C0"],
+    "isContractGrade": true
+  },
+  {
+    "id": 1,
+    "name": "Upholstered Barrel Back Dining Chair",
+    "priceRange": "$399 - $579",
+    "image": "/assets/images/Categories/f-2.png",
+    "colors": ["#E5E5E5", "#D3D3D3", "#C0C0C0"],
+    "isContractGrade": true
+  }
+]

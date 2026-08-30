@@ -1,0 +1,52 @@
+{
+  "name": "sanam-store-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap --config next-sitemap.config.js"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
+    "axios": "^1.16.1",
+    "bootstrap": "^5.3.3",
+    "cookies-next": "^5.1.0",
+    "lucide-react": "^0.471.1",
+    "next": "16.2.6",
+    "@next/third-parties": "^16.2.6",
+    "next-sitemap": "^4.2.3",
+    "react": "^19.2.6",
+    "react-bootstrap": "^2.10.7",
+    "react-bootstrap-pagination-control": "^1.0.5",
+    "react-dom": "^19.2.6",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.4.0",
+    "react-image-magnify": "^2.7.4",
+    "react-pdf": "^9.2.1",
+    "react-rating": "^2.0.5",
+    "react-redux": "^9.2.0",
+    "react-select": "^5.10.0",
+    "react-to-print": "^3.0.5",
+    "react-toastify": "^11.0.3",
+    "react-tooltip": "^5.28.0",
+    "sass": "^1.83.4",
+    "swiper": "^11.2.2"
+  },
+  "overrides": {
+    "follow-redirects": "^1.16.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6"
+  }
+}

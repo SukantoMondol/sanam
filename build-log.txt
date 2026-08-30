@@ -1,0 +1,100 @@
+
+> solfa-furnisher-frontend@0.1.0 build
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+- Environments: .env
+- Experiments (use with caution):
+  · optimizePackageImports
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.8s
+  Running TypeScript ...
+  Finished TypeScript in 53ms ...
+  Collecting page data using 19 workers ...
+  Generating static pages using 19 workers (0/35) ...
+  Generating static pages using 19 workers (8/35) 
+  Generating static pages using 19 workers (17/35) 
+  Generating static pages using 19 workers (26/35) 
+✓ Generating static pages using 19 workers (35/35) in 983ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /[...not-found]
+├ ○ /all-products
+├ ƒ /api/all-products
+├ ƒ /api/career
+├ ƒ /api/career/[slug]
+├ ƒ /api/fb-events
+├ ƒ /api/fb-test
+├ ƒ /api/meetings/available-dates
+├ ƒ /api/meetings/available-slots
+├ ƒ /api/meetings/check-slot
+├ ƒ /api/meetings/request
+├ ○ /blog
+├ ƒ /blog/[id]
+├ ○ /buy-now
+├ ○ /career
+├ ƒ /career/[slug]
+├ ○ /cart
+├ ƒ /category/[slug]
+├ ○ /checkout
+├ ○ /company-profile
+├ ○ /contact-us
+├ ○ /delivery-and-return-policy
+├ ○ /edit-profile
+├ ○ /forgot-password
+├ ƒ /landing/[slug]
+├ ○ /meeting-request
+├ ○ /my-profile
+├ ○ /order-complain
+├ ƒ /order-confirmation/[id]
+├ ƒ /order-details/[id]
+├ ƒ /pay/[id]
+├ ○ /pixel-test
+├ ○ /privacy-policy
+├ ƒ /product-details/[slug]
+├ ○ /product-request
+├ ƒ /reset-password
+├ ○ /sale-on-solfa-furnishers
+├ ƒ /search/[keyword]
+├ ○ /sign-in
+├ ○ /sign-up
+├ ○ /social-login
+└ ○ /terms-and-conditions
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> solfa-furnisher-frontend@0.1.0 postbuild
+> next-sitemap --config next-sitemap.config.js
+
+✨ [next-sitemap] Loading next-sitemap config: file:///c:/laragon/www/solfa-furnishers-frontend/next-sitemap.config.js
+✅ [next-sitemap] Generation completed
+┌───────────────┬────────┐
+│ (index)       │ Values │
+├───────────────┼────────┤
+│ indexSitemaps │ 1      │
+│ sitemaps      │ 1      │
+└───────────────┴────────┘
+-----------------------------------------------------
+ SITEMAP INDICES 
+-----------------------------------------------------
+
+   ○ https://solfafurnishers.com/sitemap.xml
+
+
+-----------------------------------------------------
+ SITEMAPS 
+-----------------------------------------------------
+
+   ○ https://solfafurnishers.com/sitemap-0.xml
+
+

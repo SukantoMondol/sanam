@@ -1,0 +1,14 @@
+# Solfa Furnishers
+
+Solfa Furnishers is a furniture and home decor ecommerce website in Bangladesh.
+
+## Useful Links
+
+- Homepage: https://solfafurnishers.com/
+- Products: https://solfafurnishers.com/all-products
+- Contact: https://solfafurnishers.com/contact-us
+- Company Profile: https://solfafurnishers.com/company-profile
+- Privacy Policy: https://solfafurnishers.com/privacy-policy
+- Terms and Conditions: https://solfafurnishers.com/terms-and-conditions
+- Delivery and Return Policy: https://solfafurnishers.com/delivery-and-return-policy
+- Sitemap: https://solfafurnishers.com/sitemap.xml

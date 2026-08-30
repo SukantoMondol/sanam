@@ -1,0 +1,52 @@
+[
+  {
+    "type": "checkbox",
+    "htmlForId": "upholstered",
+    "label": "Upholstered"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "fabric",
+    "label": "Fabric"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "wood",
+    "label": "Wood"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "leather",
+    "label": "Leather"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "metal",
+    "label": "Metal"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "woven",
+    "label": "Woven"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "slipcovered",
+    "label": "Slipcovered"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "rattan",
+    "label": "Rattan"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "all-weather-wicker",
+    "label": "All-weather-wicker"
+  },
+  {
+    "type": "checkbox",
+    "htmlForId": "natural-weave",
+    "label": "Natural Weave"
+  }
+]

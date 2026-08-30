@@ -1,0 +1,817 @@
+/* ── Main Career Page Container ── */
+.careerPage {
+  font-family: "Manrope", "Sora", sans-serif;
+  color: #1f192f;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ── Section 1: Hero Banner Header ── */
+.heroBanner {
+  position: relative;
+  width: 100%;
+  background: url('/image/career-hero-banner.png') center center / cover no-repeat;
+  aspect-ratio: 1920 / 580;
+  min-height: clamp(260px, 32vw, 480px);
+  overflow: hidden;
+}
+
+/* ── Section 2: "Build Your Career. Create an Impact." ── */
+.aboutSection {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.aboutGrid {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.aboutContentCol {
+  flex: 1 1 500px;
+}
+
+.aboutTitle {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: #1c152b;
+  margin: 0 0 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.aboutDesc {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #4b5563;
+  margin-bottom: 36px;
+}
+
+.statsRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.statCard {
+  background: #faf8fc;
+  border: 1px solid #f0ebf8;
+  border-radius: 16px;
+  padding: 20px 24px;
+  flex: 1 1 140px;
+  text-align: left;
+}
+
+.statNumber {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #732a89;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.statLabel {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.aboutImageCol {
+  flex: 1 1 480px;
+  position: relative;
+}
+
+.aboutImageWrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(115, 42, 137, 0.08);
+  background: #ffffff;
+  border: 1.5px solid #ece4fa;
+  padding: 8px;
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: contain;
+  display: block;
+  border-radius: 18px;
+}
+
+/* ── Section 3: "Discover Your Opportunity at Sanam" ── */
+.jobsSection {
+  padding: 90px 0 100px;
+  background: #f4f0fa;
+}
+
+.sectionHeader {
+  text-align: left;
+  max-width: 1240px;
+  margin: 0 auto 36px;
+}
+
+.jobsSectionTitle {
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #1c152b;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.jobsSectionSubtitle {
+  font-size: 1.05rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.jobsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* ── Full Width Job Card ── */
+.jobCard {
+  background: #ffffff;
+  border: 1.5px solid #ece4fa;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(115, 42, 137, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  height: auto !important;
+}
+
+.jobCardActive,
+.jobCard:hover {
+  box-shadow: 0 10px 30px rgba(115, 42, 137, 0.12);
+  border-color: #732a89;
+}
+
+.cardHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.titleCol {
+  flex: 1 1 auto;
+  min-width: 260px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.jobTitle {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1c152b;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.viewDescBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6c2b85;
+  background: #f4ecfb;
+  border-radius: 999px;
+  padding: 5px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.jobCardActive .viewDescBadge,
+.jobCard:hover .viewDescBadge,
+.viewDescBadgeActive {
+  background: #732a89;
+  color: #ffffff;
+}
+
+.jobCardActive .jobTitle,
+.jobCard:hover .jobTitle {
+  color: #732a89;
+}
+
+.jobCardActive .viewDescBadge svg,
+.jobCard:hover .viewDescBadge svg,
+.viewDescBadgeActive svg {
+  stroke: #ffffff !important;
+}
+
+.badgesRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pillBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #5c2072;
+  background: #f7f3fd;
+  border: 1px solid #ece4fa;
+  border-radius: 999px;
+  padding: 6px 16px;
+}
+
+.metaCol {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.deadlineDate {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #241b38;
+}
+
+.vacancyText {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #554d66;
+}
+
+.actionsCol {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.viewDetailsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #2e1840;
+  background: #f6f0fb;
+  border: 1px solid #ebdcf7;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.viewDetailsBtn:hover {
+  background: #ebdcf7;
+  color: #1c0e29;
+}
+
+.applyNowBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #732a89;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(115, 42, 137, 0.35);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.applyNowBtn:hover {
+  background: #602173;
+  box-shadow: 0 8px 24px rgba(115, 42, 137, 0.45);
+  transform: translateY(-1px);
+  color: #ffffff;
+}
+
+.viewDetailsBtnActive {
+  background: #fbf8fe;
+  color: #732a89;
+  border-color: #732a89;
+}
+
+.accordionBox {
+  border-top: 1.5px dashed #ebdcf7;
+  background: #ffffff;
+  padding: 28px 36px 36px;
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.roleOverviewBox {
+  background: #fcf9fe;
+  border: 1px solid #f2e9f8;
+  border-left: 4px solid #732a89;
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-bottom: 24px;
+}
+
+.roleOverviewHeader {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #732a89;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.roleOverviewText {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.7;
+  font-weight: 500;
+  margin: 0;
+}
+
+.jobDescHeading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #5c2072;
+  margin: 0 0 16px;
+}
+
+.jobDescriptionBody {
+  font-size: 0.96rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.accordionSectionTitle:first-child {
+  margin-top: 0;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.bulletArrow {
+  color: #732a89;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.boldText {
+  font-weight: 600;
+  color: #111827;
+}
+
+.accordionFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #e9d5ff;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.salaryDeadlineInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #581c87;
+}
+
+.accordionActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fullDetailsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #732a89;
+  background: #ffffff;
+  border: 1px solid #ddd6fe;
+  border-radius: 999px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.fullDetailsLink:hover {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+  color: #5c2072;
+}
+
+/* ── Section 4: "Ready to Join Sanam?" ── */
+.contactSection {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.contactGrid {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.contactContentCol {
+  flex: 1 1 500px;
+}
+
+.contactEyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #732a89;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contactTitle {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: #1c152b;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.contactSubtitle {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #4b5563;
+  margin-bottom: 28px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #1c152b;
+}
+
+.contactIcon {
+  color: #732a89;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.contactBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #732a89;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(115, 42, 137, 0.3);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.contactBtn:hover {
+  background: #602173;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.contactImageCol {
+  flex: 1 1 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactIllustration {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+}
+
+/* ── Application Modal Popup ── */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 10, 25, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background: #ffffff;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 32px 36px;
+  box-shadow: 0 25px 50px -12px rgba(115, 42, 137, 0.25);
+  position: relative;
+  animation: popIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f3e8ff;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.closeBtn {
+  background: #f3e8ff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #732a89;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.closeBtn:hover {
+  background: #e9d5ff;
+  color: #5c2072;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #faf9fc;
+  font-size: 0.95rem;
+  color: #111827;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: #732a89;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(115, 42, 137, 0.15);
+}
+
+.formFileInput {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #faf9fc;
+  font-size: 0.9rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: none;
+  background: #732a89;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(115, 42, 137, 0.35);
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submitBtn:hover {
+  background: #602173;
+  box-shadow: 0 12px 28px rgba(115, 42, 137, 0.45);
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── Responsive adjustments ── */
+@media (max-width: 991.98px) {
+
+  .aboutGrid,
+  .contactGrid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .aboutImageCol,
+  .contactImageCol {
+    width: 100%;
+  }
+
+  .cardHeaderRow {
+    padding: 20px 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .heroBanner {
+    padding: 60px 0 70px;
+  }
+
+  .aboutSection,
+  .jobsSection,
+  .contactSection {
+    padding: 50px 0;
+  }
+
+  .cardHeaderRow {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 16px;
+    gap: 14px;
+  }
+
+  .titleCol {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e9e4f0;
+  }
+
+  .titleRow {
+    margin-bottom: 10px;
+  }
+
+  .jobTitle {
+    font-size: 1.2rem;
+  }
+
+  .metaCol {
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e9e4f0;
+  }
+
+  .deadlineDate {
+    font-size: 1rem;
+  }
+
+  .vacancyText {
+    font-size: 0.88rem;
+  }
+
+  .actionsCol {
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .viewDetailsBtn,
+  .applyNowBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    border-radius: 999px;
+  }
+
+  .accordionBox {
+    padding: 20px 16px;
+  }
+
+  .accordionFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .accordionActions {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fullDetailsLink,
+  .accordionActions .applyNowBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .modalContent {
+    padding: 24px 18px;
+  }
+}
