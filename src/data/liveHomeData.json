@@ -1,0 +1,4483 @@
+{
+  "banners": [
+    {
+      "id": 52,
+      "title": "Hero Banner",
+      "link": "https://kw.sanamstore.net/en/search?sq=miracle",
+      "url": "https://kw.sanamstore.net/en/search?sq=miracle",
+      "image": "https://kw.sanamstore.net/uploads/slideshow/b-6d7c4501b1a7745c44a2e0969d1cbd03.webp",
+      "picture": "https://kw.sanamstore.net/uploads/slideshow/b-6d7c4501b1a7745c44a2e0969d1cbd03.webp",
+      "mobile_image": "https://kw.sanamstore.net/uploads/slideshow/b-6d7c4501b1a7745c44a2e0969d1cbd03.webp",
+      "mobile_picture": "https://kw.sanamstore.net/uploads/slideshow/b-6d7c4501b1a7745c44a2e0969d1cbd03.webp",
+      "button_text": "Shop Now"
+    },
+    {
+      "id": 51,
+      "title": "Hero Banner",
+      "link": "https://kw.sanamstore.net/en/products/120/Large-Home-Appliances-in-kuwait",
+      "url": "https://kw.sanamstore.net/en/products/120/Large-Home-Appliances-in-kuwait",
+      "image": "https://kw.sanamstore.net/uploads/slideshow/b-6855c80f497d0bb2b6c858d8239924a3.webp",
+      "picture": "https://kw.sanamstore.net/uploads/slideshow/b-6855c80f497d0bb2b6c858d8239924a3.webp",
+      "mobile_image": "https://kw.sanamstore.net/uploads/slideshow/b-6855c80f497d0bb2b6c858d8239924a3.webp",
+      "mobile_picture": "https://kw.sanamstore.net/uploads/slideshow/b-6855c80f497d0bb2b6c858d8239924a3.webp",
+      "button_text": "Shop Now"
+    },
+    {
+      "id": 54,
+      "title": "Hero Banner",
+      "link": "https://kw.sanamstore.net/en/search?sq=fischer",
+      "url": "https://kw.sanamstore.net/en/search?sq=fischer",
+      "image": "https://kw.sanamstore.net/uploads/slideshow/b-7d07fec9e7e97968dcbe1ad053d90fda.webp",
+      "picture": "https://kw.sanamstore.net/uploads/slideshow/b-7d07fec9e7e97968dcbe1ad053d90fda.webp",
+      "mobile_image": "https://kw.sanamstore.net/uploads/slideshow/b-7d07fec9e7e97968dcbe1ad053d90fda.webp",
+      "mobile_picture": "https://kw.sanamstore.net/uploads/slideshow/b-7d07fec9e7e97968dcbe1ad053d90fda.webp",
+      "button_text": "Shop Now"
+    }
+  ],
+  "top_categories": [],
+  "block_categories": [
+    {
+      "id": 53,
+      "name": "Drills",
+      "slug": "53",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 4497,
+          "name": "Ingco 20V CORDLESS AIR BLOWER AND VACUUM CLEANER COMBO SET",
+          "title": "Ingco 20V CORDLESS AIR BLOWER AND VACUUM CLEANER COMBO SET",
+          "slug": "4497",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-63796d28b48ccc7e28010a6892319cb5.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-63796d28b48ccc7e28010a6892319cb5.webp",
+          "photo_alt": "Ingco 20V CORDLESS AIR BLOWER AND VACUUM CLEANER COMBO SET",
+          "price": {
+            "price": 29.9,
+            "payable_price": 29.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1985
+          }
+        },
+        {
+          "id": 4496,
+          "name": "Heat Gun Ingco HG200047 - 2000W ingco",
+          "title": "Heat Gun Ingco HG200047 - 2000W ingco",
+          "slug": "4496",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-2a2de7fe6fa0930ecab247122caa0f6e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-2a2de7fe6fa0930ecab247122caa0f6e.webp",
+          "photo_alt": "Heat Gun Ingco HG200047 - 2000W ingco",
+          "price": {
+            "price": 11.5,
+            "payable_price": 11.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1985
+          }
+        },
+        {
+          "id": 4495,
+          "name": "ingco Cordless Li-Ion Heat Gun 20V 4.0AH",
+          "title": "ingco Cordless Li-Ion Heat Gun 20V 4.0AH",
+          "slug": "4495",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-2bab60668ee64d0c6581163046d48ffc.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-2bab60668ee64d0c6581163046d48ffc.webp",
+          "photo_alt": "ingco Cordless Li-Ion Heat Gun 20V 4.0AH",
+          "price": {
+            "price": 35,
+            "payable_price": 35,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1997
+          }
+        },
+        {
+          "id": 4493,
+          "name": "INGCO HKTHP11651 TOOLS SET  with drill 166PCS",
+          "title": "INGCO HKTHP11651 TOOLS SET  with drill 166PCS",
+          "slug": "4493",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-702b4827e2b93d3601f8835e7b710f17.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-702b4827e2b93d3601f8835e7b710f17.webp",
+          "photo_alt": "INGCO HKTHP11651 TOOLS SET  with drill 166PCS",
+          "price": {
+            "price": 49,
+            "payable_price": 49,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1980
+          }
+        },
+        {
+          "id": 3681,
+          "name": "edon promax Cordless Brushed impact Drill 24V",
+          "title": "edon promax Cordless Brushed impact Drill 24V",
+          "slug": "3681",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-5476471dcc808ba3470f35b7eca7667b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-5476471dcc808ba3470f35b7eca7667b.webp",
+          "photo_alt": "edon promax Cordless Brushed impact Drill 24V",
+          "price": {
+            "price": 15.9,
+            "payable_price": 15.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1933
+          }
+        },
+        {
+          "id": 1401,
+          "name": "Lithium ion Cordless Screwdriver 4v",
+          "title": "Lithium ion Cordless Screwdriver 4v",
+          "slug": "1401",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-efaa38165d19680131cbfe11c97acbbe.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-efaa38165d19680131cbfe11c97acbbe.jpg",
+          "photo_alt": "Lithium ion Cordless Screwdriver 4v",
+          "price": {
+            "price": 13.9,
+            "payable_price": 13.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1927
+          }
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Clearance Deals",
+      "slug": "56",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 4918,
+          "name": "Miracle Tile & Grout Cleaner – Deep Cleaning Formula",
+          "title": "Miracle Tile & Grout Cleaner – Deep Cleaning Formula",
+          "slug": "4918",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-dba44cb4bb3d76fb44f5d39fd6ad2b77.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-dba44cb4bb3d76fb44f5d39fd6ad2b77.webp",
+          "photo_alt": "Miracle Tile & Grout Cleaner – Deep Cleaning Formula",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1999193
+          }
+        },
+        {
+          "id": 4899,
+          "name": "Miracle Floors Carpet Cleaner Liquid (1 Liter)",
+          "title": "Miracle Floors Carpet Cleaner Liquid (1 Liter)",
+          "slug": "4899",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-4db1cf773a35121c124203d319c59b9a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-4db1cf773a35121c124203d319c59b9a.webp",
+          "photo_alt": "Miracle Floors Carpet Cleaner Liquid (1 Liter)",
+          "price": {
+            "price": 5.25,
+            "payable_price": 5.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9999736
+          }
+        },
+        {
+          "id": 4904,
+          "name": "Miracle Sticker Remover",
+          "title": "Miracle Sticker Remover",
+          "slug": "4904",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f859b423ff2abec651f8f3d1526f4e1e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f859b423ff2abec651f8f3d1526f4e1e.webp",
+          "photo_alt": "Miracle Sticker Remover",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9999597
+          }
+        },
+        {
+          "id": 4906,
+          "name": "T Miracle Bathroom Mould Spray 500ml",
+          "title": "T Miracle Bathroom Mould Spray 500ml",
+          "slug": "4906",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d8e924e2d3d23c4ca6822fff9e1e6a0c.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d8e924e2d3d23c4ca6822fff9e1e6a0c.webp",
+          "photo_alt": "T Miracle Bathroom Mould Spray 500ml",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9998804
+          }
+        },
+        {
+          "id": 4945,
+          "name": "Miracle Oxi Magic Sofa  – Power Stain Remover (500ml)",
+          "title": "Miracle Oxi Magic Sofa  – Power Stain Remover (500ml)",
+          "slug": "4945",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f7ddadd0b6771b55c8bdea96c2078c9c.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f7ddadd0b6771b55c8bdea96c2078c9c.webp",
+          "photo_alt": "Miracle Oxi Magic Sofa  – Power Stain Remover (500ml)",
+          "price": {
+            "price": 2.9,
+            "payable_price": 2.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1830
+          }
+        },
+        {
+          "id": 4903,
+          "name": "Miracle Paint Remover & Scribble Spray",
+          "title": "Miracle Paint Remover & Scribble Spray",
+          "slug": "4903",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-71a22857eadc8528adfb1024bd00cb9e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-71a22857eadc8528adfb1024bd00cb9e.webp",
+          "photo_alt": "Miracle Paint Remover & Scribble Spray",
+          "price": {
+            "price": 3.5,
+            "payable_price": 3.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9999804
+          }
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Lightning Deals",
+      "slug": "57",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 4845,
+          "name": "Miracle Bathroom Mould Spray 500ml",
+          "title": "Miracle Bathroom Mould Spray 500ml",
+          "slug": "4845",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-40e9483201b49d6d9acf3ddbc845a129.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-40e9483201b49d6d9acf3ddbc845a129.webp",
+          "photo_alt": "Miracle Bathroom Mould Spray 500ml",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9998669
+          }
+        },
+        {
+          "id": 4092,
+          "name": "Oven and grill cleaner 500ml - Miracle Heavy Duty degreaser",
+          "title": "Oven and grill cleaner 500ml - Miracle Heavy Duty degreaser",
+          "slug": "4092",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-753a04f953e3bdd734bca220f2ce81ef.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-753a04f953e3bdd734bca220f2ce81ef.webp",
+          "photo_alt": "Oven and grill cleaner 500ml - Miracle Heavy Duty degreaser",
+          "price": {
+            "price": 1.9,
+            "payable_price": 1.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9998938
+          }
+        },
+        {
+          "id": 4908,
+          "name": "Miracle Steel Polish",
+          "title": "Miracle Steel Polish",
+          "slug": "4908",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-192ac1d9d33551d1eb37b93e5b53a0d8.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-192ac1d9d33551d1eb37b93e5b53a0d8.webp",
+          "photo_alt": "Miracle Steel Polish",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9999875
+          }
+        },
+        {
+          "id": 4936,
+          "name": "DLC Professional Turkish Chef Knife (Wide Blade) - Model DLC-1456 - High Quality with Ergonomic Black Handle",
+          "title": "DLC Professional Turkish Chef Knife (Wide Blade) - Model DLC-1456 - High Quality with Ergonomic Black Handle",
+          "slug": "4936",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-922640ed2525259f1342eca37cc9e4cb.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-922640ed2525259f1342eca37cc9e4cb.webp",
+          "photo_alt": "DLC Professional Turkish Chef Knife (Wide Blade) - Model DLC-1456 - High Quality with Ergonomic Black Handle",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 993
+          }
+        },
+        {
+          "id": 4278,
+          "name": "Miracle Natural Marble Cleaner - 1 Liter",
+          "title": "Miracle Natural Marble Cleaner - 1 Liter",
+          "slug": "4278",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-dc4b107bba0b3fdd24257e0186694913.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-dc4b107bba0b3fdd24257e0186694913.webp",
+          "photo_alt": "Miracle Natural Marble Cleaner - 1 Liter",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9999705
+          }
+        },
+        {
+          "id": 4895,
+          "name": "Miracle Fridge Cleaner & Sanitizer Spray",
+          "title": "Miracle Fridge Cleaner & Sanitizer Spray",
+          "slug": "4895",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e3c3c9ded1f91eb0fc32d32673b05d60.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e3c3c9ded1f91eb0fc32d32673b05d60.webp",
+          "photo_alt": "Miracle Fridge Cleaner & Sanitizer Spray",
+          "price": {
+            "price": 4.25,
+            "payable_price": 3.75,
+            "discount": 0.5,
+            "discount_percentage": 12
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 9999742
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Camping Tools",
+      "slug": "29",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 1247,
+          "name": "Electric Charcoal Lighter",
+          "title": "Electric Charcoal Lighter",
+          "slug": "1247",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-1ff71b6ef7556d084190adabd2fe7680.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-1ff71b6ef7556d084190adabd2fe7680.webp",
+          "photo_alt": "Electric Charcoal Lighter",
+          "price": {
+            "price": 8.25,
+            "payable_price": 8.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1895
+          }
+        },
+        {
+          "id": 1889,
+          "name": "Air bed and sofa",
+          "title": "Air bed and sofa",
+          "slug": "1889",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-6c21099b98844315aa3438b46cc72789.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-6c21099b98844315aa3438b46cc72789.jpg",
+          "photo_alt": "Air bed and sofa",
+          "price": {
+            "price": 22.25,
+            "payable_price": 22.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1991
+          }
+        },
+        {
+          "id": 828,
+          "name": "Portable Gas Stove",
+          "title": "Portable Gas Stove",
+          "slug": "828",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d70b522e3bb1ea540c389e7d970dc0f8.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d70b522e3bb1ea540c389e7d970dc0f8.jpg",
+          "photo_alt": "Portable Gas Stove",
+          "price": {
+            "price": 3.9,
+            "payable_price": 3.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1857
+          }
+        },
+        {
+          "id": 546,
+          "name": "Electric Drinking Water Pump",
+          "title": "Electric Drinking Water Pump",
+          "slug": "546",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-1484b20d6b6392bbf91de0a4708ce627.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-1484b20d6b6392bbf91de0a4708ce627.webp",
+          "photo_alt": "Electric Drinking Water Pump",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1672
+          }
+        },
+        {
+          "id": 1411,
+          "name": "Portable Gas Heater And Stove",
+          "title": "Portable Gas Heater And Stove",
+          "slug": "1411",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-72dc46611597b315889bdf247440e453.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-72dc46611597b315889bdf247440e453.jpeg",
+          "photo_alt": "Portable Gas Heater And Stove",
+          "price": {
+            "price": 15.5,
+            "payable_price": 15.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1987
+          }
+        },
+        {
+          "id": 2306,
+          "name": "White Washed Sand - Washed Soil 20 KG",
+          "title": "White Washed Sand - Washed Soil 20 KG",
+          "slug": "2306",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-91f78a99784f748fef1252aaffa175ab.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-91f78a99784f748fef1252aaffa175ab.webp",
+          "photo_alt": "White Washed Sand - Washed Soil 20 KG",
+          "price": {
+            "price": 4.9,
+            "payable_price": 4.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1660
+          }
+        },
+        {
+          "id": 2334,
+          "name": "Foldable Camping 2 Chairs And A Table",
+          "title": "Foldable Camping 2 Chairs And A Table",
+          "slug": "2334",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e718f893dcc1aacf21af620d5a86138d.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e718f893dcc1aacf21af620d5a86138d.webp",
+          "photo_alt": "Foldable Camping 2 Chairs And A Table",
+          "price": {
+            "price": 14.9,
+            "payable_price": 14.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1985
+          }
+        },
+        {
+          "id": 1735,
+          "name": "Baofeng 2PCS Walkie Talkies - BF-888S",
+          "title": "Baofeng 2PCS Walkie Talkies - BF-888S",
+          "slug": "1735",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-2531f014f63bfe1a14b5b7515290b2b6.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-2531f014f63bfe1a14b5b7515290b2b6.jpg",
+          "photo_alt": "Baofeng 2PCS Walkie Talkies - BF-888S",
+          "price": {
+            "price": 17.75,
+            "payable_price": 14.75,
+            "discount": 3,
+            "discount_percentage": 17
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 720
+          }
+        },
+        {
+          "id": 825,
+          "name": "Portable Card Type Stove",
+          "title": "Portable Card Type Stove",
+          "slug": "825",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-be3792dfb793f61bdbc8bd71c88ed917.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-be3792dfb793f61bdbc8bd71c88ed917.jpg",
+          "photo_alt": "Portable Card Type Stove",
+          "price": {
+            "price": 4,
+            "payable_price": 4,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1986
+          }
+        },
+        {
+          "id": 1733,
+          "name": "6pcs Kebab Skewers",
+          "title": "6pcs Kebab Skewers",
+          "slug": "1733",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-1835b5d0a330638ddd6e38a91bd4ae1a.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-1835b5d0a330638ddd6e38a91bd4ae1a.jpg",
+          "photo_alt": "6pcs Kebab Skewers",
+          "price": {
+            "price": 1.5,
+            "payable_price": 1.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1957
+          }
+        },
+        {
+          "id": 1739,
+          "name": "Single Pirate Telescope - 25X30",
+          "title": "Single Pirate Telescope - 25X30",
+          "slug": "1739",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-cce573025d0a3e2fd0ebce5ed0870c34.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-cce573025d0a3e2fd0ebce5ed0870c34.jpg",
+          "photo_alt": "Single Pirate Telescope - 25X30",
+          "price": {
+            "price": 8.75,
+            "payable_price": 8.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1982
+          }
+        },
+        {
+          "id": 2316,
+          "name": "BBQ Air Blower",
+          "title": "BBQ Air Blower",
+          "slug": "2316",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-786962b79db9c0feb9a18227fc5a121a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-786962b79db9c0feb9a18227fc5a121a.webp",
+          "photo_alt": "BBQ Air Blower",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1988
+          }
+        },
+        {
+          "id": 974,
+          "name": "Kendo wire cutting blade",
+          "title": "Kendo wire cutting blade",
+          "slug": "974",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-1edeb30e1336144d8ee7444521fee7bb.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-1edeb30e1336144d8ee7444521fee7bb.jpg",
+          "photo_alt": "Kendo wire cutting blade",
+          "price": {
+            "price": 6.75,
+            "payable_price": 6.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1973
+          }
+        },
+        {
+          "id": 2323,
+          "name": "Camp Shower 20L",
+          "title": "Camp Shower 20L",
+          "slug": "2323",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-266be2dcd7dacc6028ed61467ef1ddd9.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-266be2dcd7dacc6028ed61467ef1ddd9.webp",
+          "photo_alt": "Camp Shower 20L",
+          "price": {
+            "price": 3.5,
+            "payable_price": 3.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1957
+          }
+        },
+        {
+          "id": 2912,
+          "name": "Double Burner Portable Gas Stove",
+          "title": "Double Burner Portable Gas Stove",
+          "slug": "2912",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-9002af9406284d1b5c1578b0ef2f2a4a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-9002af9406284d1b5c1578b0ef2f2a4a.webp",
+          "photo_alt": "Double Burner Portable Gas Stove",
+          "price": {
+            "price": 18.75,
+            "payable_price": 18.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1987
+          }
+        },
+        {
+          "id": 3197,
+          "name": "Natural Charcoal For BBQ 4Kg",
+          "title": "Natural Charcoal For BBQ 4Kg",
+          "slug": "3197",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-16c6db261031486dee10e6e4e33e5b97.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-16c6db261031486dee10e6e4e33e5b97.webp",
+          "photo_alt": "Natural Charcoal For BBQ 4Kg",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1918
+          }
+        },
+        {
+          "id": 1324,
+          "name": "Portable Folding Chair",
+          "title": "Portable Folding Chair",
+          "slug": "1324",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-493b43c59129dd75eb528e7baf859e44.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-493b43c59129dd75eb528e7baf859e44.jpg",
+          "photo_alt": "Portable Folding Chair",
+          "price": {
+            "price": 6.5,
+            "payable_price": 4.75,
+            "discount": 1.75,
+            "discount_percentage": 27
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1680
+          }
+        },
+        {
+          "id": 2906,
+          "name": "Outdoor Wind Shield & Heat Reflector",
+          "title": "Outdoor Wind Shield & Heat Reflector",
+          "slug": "2906",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a19bc0017241b95cc8d83f417212b141.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a19bc0017241b95cc8d83f417212b141.webp",
+          "photo_alt": "Outdoor Wind Shield & Heat Reflector",
+          "price": {
+            "price": 3.9,
+            "payable_price": 3.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1981
+          }
+        },
+        {
+          "id": 2911,
+          "name": "Portable Camping Gas Burner Stove",
+          "title": "Portable Camping Gas Burner Stove",
+          "slug": "2911",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f6daf2d235a587c98065f7cdef132638.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f6daf2d235a587c98065f7cdef132638.webp",
+          "photo_alt": "Portable Camping Gas Burner Stove",
+          "price": {
+            "price": 14.75,
+            "payable_price": 14.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1987
+          }
+        },
+        {
+          "id": 1321,
+          "name": "Eco Grill Barbecue",
+          "title": "Eco Grill Barbecue",
+          "slug": "1321",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-4c23192b8abd89543a066c0174718144.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-4c23192b8abd89543a066c0174718144.jpeg",
+          "photo_alt": "Eco Grill Barbecue",
+          "price": {
+            "price": 3,
+            "payable_price": 3,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1883
+          }
+        },
+        {
+          "id": 1440,
+          "name": "Double Spring Tent",
+          "title": "Double Spring Tent",
+          "slug": "1440",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-1ddd25f5e4be4e2c3c77c3c9146f2052.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-1ddd25f5e4be4e2c3c77c3c9146f2052.jpg",
+          "photo_alt": "Double Spring Tent",
+          "price": {
+            "price": 24.5,
+            "payable_price": 24.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1995
+          }
+        },
+        {
+          "id": 3181,
+          "name": "Barbecue Grill Basket With Wooden Handle",
+          "title": "Barbecue Grill Basket With Wooden Handle",
+          "slug": "3181",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-fba7755f0fe4ea431fb332f3c2229e5d.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-fba7755f0fe4ea431fb332f3c2229e5d.webp",
+          "photo_alt": "Barbecue Grill Basket With Wooden Handle",
+          "price": {
+            "price": 1.25,
+            "payable_price": 1.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 3969
+          }
+        },
+        {
+          "id": 1820,
+          "name": "Jobon Set Lighter",
+          "title": "Jobon Set Lighter",
+          "slug": "1820",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-423db1437ba1a4ff00eec2cc25a04995.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-423db1437ba1a4ff00eec2cc25a04995.webp",
+          "photo_alt": "Jobon Set Lighter",
+          "price": {
+            "price": 9.75,
+            "payable_price": 5.25,
+            "discount": 4.5,
+            "discount_percentage": 46
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1838
+          }
+        },
+        {
+          "id": 2210,
+          "name": "Rechargeable Head Light Harden",
+          "title": "Rechargeable Head Light Harden",
+          "slug": "2210",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-307b20388d004b6086bbcabd2bae3304.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-307b20388d004b6086bbcabd2bae3304.webp",
+          "photo_alt": "Rechargeable Head Light Harden",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1979
+          }
+        },
+        {
+          "id": 3147,
+          "name": "Rain Coat in a Plastic Ball Disposable",
+          "title": "Rain Coat in a Plastic Ball Disposable",
+          "slug": "3147",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-3aedc8ab63e60fffc4fc5fec22cfd779.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-3aedc8ab63e60fffc4fc5fec22cfd779.webp",
+          "photo_alt": "Rain Coat in a Plastic Ball Disposable",
+          "price": {
+            "price": 0.5,
+            "payable_price": 0.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 10920
+          }
+        },
+        {
+          "id": 3106,
+          "name": "BBQ Heat Resistant Gloves",
+          "title": "BBQ Heat Resistant Gloves",
+          "slug": "3106",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-6e6cd1ee66c9eea5073f87e7cce1394b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-6e6cd1ee66c9eea5073f87e7cce1394b.webp",
+          "photo_alt": "BBQ Heat Resistant Gloves",
+          "price": {
+            "price": 4.25,
+            "payable_price": 2.9,
+            "discount": 1.35,
+            "discount_percentage": 32
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1856
+          }
+        },
+        {
+          "id": 3188,
+          "name": "Olive Tree Fire Wood 10KG",
+          "title": "Olive Tree Fire Wood 10KG",
+          "slug": "3188",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-247fb5e14377cacf4c07c7885abd2461.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-247fb5e14377cacf4c07c7885abd2461.webp",
+          "photo_alt": "Olive Tree Fire Wood 10KG",
+          "price": {
+            "price": 3.9,
+            "payable_price": 3.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1911
+          }
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Travel",
+      "slug": "42",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 1839,
+          "name": "Hoco 6 In 1 Storage Case - U86",
+          "title": "Hoco 6 In 1 Storage Case - U86",
+          "slug": "1839",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-ef10691a947fdfca82632a313337cb1e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-ef10691a947fdfca82632a313337cb1e.webp",
+          "photo_alt": "Hoco 6 In 1 Storage Case - U86",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1961
+          }
+        },
+        {
+          "id": 2021,
+          "name": "Travel Shattaf - 2 m",
+          "title": "Travel Shattaf - 2 m",
+          "slug": "2021",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b8ce242da8d92d9dc215328a1207254a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b8ce242da8d92d9dc215328a1207254a.webp",
+          "photo_alt": "Travel Shattaf - 2 m",
+          "price": {
+            "price": 13.5,
+            "payable_price": 13.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 999740
+          }
+        },
+        {
+          "id": 3025,
+          "name": "Portable Bidet For Travel - Shattaf",
+          "title": "Portable Bidet For Travel - Shattaf",
+          "slug": "3025",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f9fe53e74addbda68d7bb826c13c2887.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f9fe53e74addbda68d7bb826c13c2887.webp",
+          "photo_alt": "Portable Bidet For Travel - Shattaf",
+          "price": {
+            "price": 1.9,
+            "payable_price": 1.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1286
+          }
+        },
+        {
+          "id": 3450,
+          "name": "Electric Mini Iron For Travelling",
+          "title": "Electric Mini Iron For Travelling",
+          "slug": "3450",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b9ef7d1cd8d00e90409786bd5487b866.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b9ef7d1cd8d00e90409786bd5487b866.webp",
+          "photo_alt": "Electric Mini Iron For Travelling",
+          "price": {
+            "price": 6.75,
+            "payable_price": 6.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1932
+          }
+        },
+        {
+          "id": 3121,
+          "name": "Mini Storage Bags Air Pump",
+          "title": "Mini Storage Bags Air Pump",
+          "slug": "3121",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-5b6e2d6ac729a308b5522cb30378ce08.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-5b6e2d6ac729a308b5522cb30378ce08.webp",
+          "photo_alt": "Mini Storage Bags Air Pump",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1929
+          }
+        },
+        {
+          "id": 1090,
+          "name": "Bathroom Shower Head Sets",
+          "title": "Bathroom Shower Head Sets",
+          "slug": "1090",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d1baa88ea76cfbd38b209b60d477c742.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d1baa88ea76cfbd38b209b60d477c742.webp",
+          "photo_alt": "Bathroom Shower Head Sets",
+          "price": {
+            "price": 3.9,
+            "payable_price": 3.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1693
+          }
+        },
+        {
+          "id": 2869,
+          "name": "Luggage Belt With Lock - 1 PC black",
+          "title": "Luggage Belt With Lock - 1 PC black",
+          "slug": "2869",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f35276cf015321fdadc1360c06c7559c.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f35276cf015321fdadc1360c06c7559c.webp",
+          "photo_alt": "Luggage Belt With Lock - 1 PC black",
+          "price": {
+            "price": 2.9,
+            "payable_price": 2.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1911
+          }
+        },
+        {
+          "id": 2413,
+          "name": "Multi Adaptors 3 way UK",
+          "title": "Multi Adaptors 3 way UK",
+          "slug": "2413",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-30b553b504bdf923e63af67a4918174f.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-30b553b504bdf923e63af67a4918174f.webp",
+          "photo_alt": "Multi Adaptors 3 way UK",
+          "price": {
+            "price": 1,
+            "payable_price": 1,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1793
+          }
+        },
+        {
+          "id": 261,
+          "name": "Multi Adaptors 3 way",
+          "title": "Multi Adaptors 3 way",
+          "slug": "261",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e2b6c43be3c0799b6470c7cfe7cfe7a6.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e2b6c43be3c0799b6470c7cfe7cfe7a6.webp",
+          "photo_alt": "Multi Adaptors 3 way",
+          "price": {
+            "price": 1,
+            "payable_price": 1,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1515
+          }
+        },
+        {
+          "id": 3424,
+          "name": "Rechargeable Camping Shattaf For Travel With Bucket -",
+          "title": "Rechargeable Camping Shattaf For Travel With Bucket -",
+          "slug": "3424",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-04bcb84de51afe1df90fc9b5d1cc4330.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-04bcb84de51afe1df90fc9b5d1cc4330.webp",
+          "photo_alt": "Rechargeable Camping Shattaf For Travel With Bucket -",
+          "price": {
+            "price": 12.9,
+            "payable_price": 12.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 199784
+          }
+        },
+        {
+          "id": 3046,
+          "name": "Travel Shattaf",
+          "title": "Travel Shattaf",
+          "slug": "3046",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-92b15d235d324933d094296e98fbfed7.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-92b15d235d324933d094296e98fbfed7.webp",
+          "photo_alt": "Travel Shattaf",
+          "price": {
+            "price": 3.9,
+            "payable_price": 3.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1845
+          }
+        },
+        {
+          "id": 2837,
+          "name": "Travel Pouch Bag 6pcs",
+          "title": "Travel Pouch Bag 6pcs",
+          "slug": "2837",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-167941915f06907288f9dc2e858217bc.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-167941915f06907288f9dc2e858217bc.webp",
+          "photo_alt": "Travel Pouch Bag 6pcs",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 3649
+          }
+        },
+        {
+          "id": 2708,
+          "name": "Black Eye Mask",
+          "title": "Black Eye Mask",
+          "slug": "2708",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-8c0c7a668eb1c98fee6ab0839832ec1e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-8c0c7a668eb1c98fee6ab0839832ec1e.webp",
+          "photo_alt": "Black Eye Mask",
+          "price": {
+            "price": 1.9,
+            "payable_price": 1.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1694
+          }
+        },
+        {
+          "id": 467,
+          "name": "Ear Plug -  5 Pairs",
+          "title": "Ear Plug -  5 Pairs",
+          "slug": "467",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-18e44f3682e4cfc9a3a8119cf8793017.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-18e44f3682e4cfc9a3a8119cf8793017.jpg",
+          "photo_alt": "Ear Plug -  5 Pairs",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1952
+          }
+        },
+        {
+          "id": 1436,
+          "name": "portable Luggage Weighing Scale",
+          "title": "portable Luggage Weighing Scale",
+          "slug": "1436",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-c4656e3f7c63e1a35884eb3407006bc0.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-c4656e3f7c63e1a35884eb3407006bc0.jpg",
+          "photo_alt": "portable Luggage Weighing Scale",
+          "price": {
+            "price": 1.9,
+            "payable_price": 1.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1092
+          }
+        },
+        {
+          "id": 3409,
+          "name": "Portable Travel Bidet - Shattaf",
+          "title": "Portable Travel Bidet - Shattaf",
+          "slug": "3409",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-bea9fc41af722d39573440c477cb07e9.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-bea9fc41af722d39573440c477cb07e9.webp",
+          "photo_alt": "Portable Travel Bidet - Shattaf",
+          "price": {
+            "price": 8.75,
+            "payable_price": 8.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1706
+          }
+        },
+        {
+          "id": 2002,
+          "name": "Travel Bag - Portable Phone Bag",
+          "title": "Travel Bag - Portable Phone Bag",
+          "slug": "2002",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-69d26370b7454aeb9d42a648cd317398.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-69d26370b7454aeb9d42a648cd317398.jpg",
+          "photo_alt": "Travel Bag - Portable Phone Bag",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1938
+          }
+        },
+        {
+          "id": 1695,
+          "name": "DLC 2 in 1 Portable Bidet, Handheld Travel Shattaf - 500 ml",
+          "title": "DLC 2 in 1 Portable Bidet, Handheld Travel Shattaf - 500 ml",
+          "slug": "1695",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-fecb424912f59bc93c33af5884ead4a2.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-fecb424912f59bc93c33af5884ead4a2.webp",
+          "photo_alt": "DLC 2 in 1 Portable Bidet, Handheld Travel Shattaf - 500 ml",
+          "price": {
+            "price": 1.75,
+            "payable_price": 1.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 199851
+          }
+        },
+        {
+          "id": 2709,
+          "name": "Neck Pillow - Eye mask - Ear Plugs set",
+          "title": "Neck Pillow - Eye mask - Ear Plugs set",
+          "slug": "2709",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-5d8a8e2484cbfa6c4ca4988b3c59f859.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-5d8a8e2484cbfa6c4ca4988b3c59f859.webp",
+          "photo_alt": "Neck Pillow - Eye mask - Ear Plugs set",
+          "price": {
+            "price": 1.5,
+            "payable_price": 1.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1920
+          }
+        },
+        {
+          "id": 2446,
+          "name": "Nano Sim Adapter 5 in 1 Tool Kit",
+          "title": "Nano Sim Adapter 5 in 1 Tool Kit",
+          "slug": "2446",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-6af0c10395eac1708370cd2394b910df.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-6af0c10395eac1708370cd2394b910df.webp",
+          "photo_alt": "Nano Sim Adapter 5 in 1 Tool Kit",
+          "price": {
+            "price": 1,
+            "payable_price": 1,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1943
+          }
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Large Home Appliances",
+      "slug": "52",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 3494,
+          "name": "Skyworth 40 Inch LED FHD Android Smart TV",
+          "title": "Skyworth 40 Inch LED FHD Android Smart TV",
+          "slug": "3494",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f8f5b099d5a59bf387604f800c5ad0ab.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f8f5b099d5a59bf387604f800c5ad0ab.webp",
+          "photo_alt": "Skyworth 40 Inch LED FHD Android Smart TV",
+          "price": {
+            "price": 94.85,
+            "payable_price": 94.85,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1994
+          }
+        },
+        {
+          "id": 3502,
+          "name": "Orca 75 Inch UHD-4K Android Smart TV",
+          "title": "Orca 75 Inch UHD-4K Android Smart TV",
+          "slug": "3502",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b7156ef6237895309d11c104c6d0b1f9.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b7156ef6237895309d11c104c6d0b1f9.webp",
+          "photo_alt": "Orca 75 Inch UHD-4K Android Smart TV",
+          "price": {
+            "price": 269.85,
+            "payable_price": 269.85,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3812,
+          "name": "Ignis Gas Cooker 90x60cm 5 Burners, Inox",
+          "title": "Ignis Gas Cooker 90x60cm 5 Burners, Inox",
+          "slug": "3812",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-811c9e39457eb9d13ba76ff12c80069e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-811c9e39457eb9d13ba76ff12c80069e.webp",
+          "photo_alt": "Ignis Gas Cooker 90x60cm 5 Burners, Inox",
+          "price": {
+            "price": 455.9,
+            "payable_price": 455.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1999
+          }
+        },
+        {
+          "id": 3851,
+          "name": "Vestel Top Mount Freezer Refrigerator 850 Liters 30 CFT, Silver",
+          "title": "Vestel Top Mount Freezer Refrigerator 850 Liters 30 CFT, Silver",
+          "slug": "3851",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f9f799b778c101109b5e63fb9448c771.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f9f799b778c101109b5e63fb9448c771.webp",
+          "photo_alt": "Vestel Top Mount Freezer Refrigerator 850 Liters 30 CFT, Silver",
+          "price": {
+            "price": 243.5,
+            "payable_price": 243.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3548,
+          "name": "Sharp Top Mount Refrigerator, 820 Litres",
+          "title": "Sharp Top Mount Refrigerator, 820 Litres",
+          "slug": "3548",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b90983c212b2a00faa48281d1e1a9a81.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b90983c212b2a00faa48281d1e1a9a81.webp",
+          "photo_alt": "Sharp Top Mount Refrigerator, 820 Litres",
+          "price": {
+            "price": 455.85,
+            "payable_price": 455.85,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3853,
+          "name": "Sharp Top Mount Refrigerator, 900 Litres, 31.7 CFT, No Frost, Inox",
+          "title": "Sharp Top Mount Refrigerator, 900 Litres, 31.7 CFT, No Frost, Inox",
+          "slug": "3853",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-08323e709ed70313f12f098f5d1ab335.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-08323e709ed70313f12f098f5d1ab335.webp",
+          "photo_alt": "Sharp Top Mount Refrigerator, 900 Litres, 31.7 CFT, No Frost, Inox",
+          "price": {
+            "price": 394.915,
+            "payable_price": 394.915,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3495,
+          "name": "Skyworth 43 Inch LED FHD Android Smart TV",
+          "title": "Skyworth 43 Inch LED FHD Android Smart TV",
+          "slug": "3495",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a598f1cca2e57db5cf5b90c4d17e4728.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a598f1cca2e57db5cf5b90c4d17e4728.webp",
+          "photo_alt": "Skyworth 43 Inch LED FHD Android Smart TV",
+          "price": {
+            "price": 108,
+            "payable_price": 108,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1998
+          }
+        },
+        {
+          "id": 3497,
+          "name": "Skyworth 55 inch UHD-4k Android Smart Tv",
+          "title": "Skyworth 55 inch UHD-4k Android Smart Tv",
+          "slug": "3497",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e9e1f5ae850be8887e907b0b0106acdf.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e9e1f5ae850be8887e907b0b0106acdf.webp",
+          "photo_alt": "Skyworth 55 inch UHD-4k Android Smart Tv",
+          "price": {
+            "price": 211.35,
+            "payable_price": 211.35,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1996
+          }
+        },
+        {
+          "id": 3523,
+          "name": "Ignis Gas Cooker 100 x 60cm",
+          "title": "Ignis Gas Cooker 100 x 60cm",
+          "slug": "3523",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-66e89775e65622d674948a584efcfe62.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-66e89775e65622d674948a584efcfe62.webp",
+          "photo_alt": "Ignis Gas Cooker 100 x 60cm",
+          "price": {
+            "price": 562.5,
+            "payable_price": 562.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3498,
+          "name": "Skyworth 58 inch UHD-4k Android Smart Tv",
+          "title": "Skyworth 58 inch UHD-4k Android Smart Tv",
+          "slug": "3498",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e9d760410c36a4a03fc8351fec95f69c.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e9d760410c36a4a03fc8351fec95f69c.webp",
+          "photo_alt": "Skyworth 58 inch UHD-4k Android Smart Tv",
+          "price": {
+            "price": 189.9,
+            "payable_price": 189.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1995
+          }
+        },
+        {
+          "id": 3807,
+          "name": "Orca 4 Burner Gas Cooker, Inox Color",
+          "title": "Orca 4 Burner Gas Cooker, Inox Color",
+          "slug": "3807",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-028c56b1c2acf91c9979f028970b1254.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-028c56b1c2acf91c9979f028970b1254.webp",
+          "photo_alt": "Orca 4 Burner Gas Cooker, Inox Color",
+          "price": {
+            "price": 190.595,
+            "payable_price": 190.595,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3545,
+          "name": "Sharp Top Mount Inverter Refrigerator 309 Litres, 10.9 CFT",
+          "title": "Sharp Top Mount Inverter Refrigerator 309 Litres, 10.9 CFT",
+          "slug": "3545",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-372efd7a966da2588c974b8333f841c8.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-372efd7a966da2588c974b8333f841c8.webp",
+          "photo_alt": "Sharp Top Mount Inverter Refrigerator 309 Litres, 10.9 CFT",
+          "price": {
+            "price": 198.15,
+            "payable_price": 198.15,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3854,
+          "name": "Orca 1700W Air Frying Oven",
+          "title": "Orca 1700W Air Frying Oven",
+          "slug": "3854",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e3efd691c86bfbff7fc34301ee1320ff.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e3efd691c86bfbff7fc34301ee1320ff.webp",
+          "photo_alt": "Orca 1700W Air Frying Oven",
+          "price": {
+            "price": 45.58,
+            "payable_price": 45.58,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1998
+          }
+        },
+        {
+          "id": 3500,
+          "name": "Orca 65 inch Ultra HD Android Smart TV",
+          "title": "Orca 65 inch Ultra HD Android Smart TV",
+          "slug": "3500",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-1e60b6270a235d535d080c9a426cc9aa.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-1e60b6270a235d535d080c9a426cc9aa.webp",
+          "photo_alt": "Orca 65 inch Ultra HD Android Smart TV",
+          "price": {
+            "price": 229.35,
+            "payable_price": 229.35,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1998
+          }
+        },
+        {
+          "id": 3504,
+          "name": "Rotai Massage Chair, Tablet Controller, 3D Massage Mechanism",
+          "title": "Rotai Massage Chair, Tablet Controller, 3D Massage Mechanism",
+          "slug": "3504",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-993ceb661e06541aac1ffe0585134e67.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-993ceb661e06541aac1ffe0585134e67.webp",
+          "photo_alt": "Rotai Massage Chair, Tablet Controller, 3D Massage Mechanism",
+          "price": {
+            "price": 999.9,
+            "payable_price": 999.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3511,
+          "name": "Ignis Gas Cooker, 4 Burners, Mechanical Control",
+          "title": "Ignis Gas Cooker, 4 Burners, Mechanical Control",
+          "slug": "3511",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-6a84d3669c271f634087b1a26752de8e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-6a84d3669c271f634087b1a26752de8e.webp",
+          "photo_alt": "Ignis Gas Cooker, 4 Burners, Mechanical Control",
+          "price": {
+            "price": 71.7,
+            "payable_price": 71.7,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1997
+          }
+        },
+        {
+          "id": 3555,
+          "name": "Naipo 2-in-1 Luxury Foldable Foot & Calf Massager",
+          "title": "Naipo 2-in-1 Luxury Foldable Foot & Calf Massager",
+          "slug": "3555",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-9ba3117024407a440e5f86a440f94eaf.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-9ba3117024407a440e5f86a440f94eaf.webp",
+          "photo_alt": "Naipo 2-in-1 Luxury Foldable Foot & Calf Massager",
+          "price": {
+            "price": 107.25,
+            "payable_price": 107.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1999
+          }
+        },
+        {
+          "id": 3547,
+          "name": "Sharp 700 Litre Top Mount Refrigerator",
+          "title": "Sharp 700 Litre Top Mount Refrigerator",
+          "slug": "3547",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-85c093ab2adf6ed1c04910ec26232245.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-85c093ab2adf6ed1c04910ec26232245.webp",
+          "photo_alt": "Sharp 700 Litre Top Mount Refrigerator",
+          "price": {
+            "price": 297.35,
+            "payable_price": 297.35,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2001
+          }
+        },
+        {
+          "id": 3849,
+          "name": "Sharp Top Mount Freezer Refrigerator 620 Liters 21.9 CFT, Inox",
+          "title": "Sharp Top Mount Freezer Refrigerator 620 Liters 21.9 CFT, Inox",
+          "slug": "3849",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-c537c581eaac1d61207a966a77596b30.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-c537c581eaac1d61207a966a77596b30.webp",
+          "photo_alt": "Sharp Top Mount Freezer Refrigerator 620 Liters 21.9 CFT, Inox",
+          "price": {
+            "price": 242.45,
+            "payable_price": 242.45,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        },
+        {
+          "id": 3810,
+          "name": "Flamegas 80x60cm Gas Cooker",
+          "title": "Flamegas 80x60cm Gas Cooker",
+          "slug": "3810",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b80377172a0f510a897f697fa5e75c3d.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b80377172a0f510a897f697fa5e75c3d.webp",
+          "photo_alt": "Flamegas 80x60cm Gas Cooker",
+          "price": {
+            "price": 272.95,
+            "payable_price": 272.95,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 2000
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Tools",
+      "slug": "25",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 677,
+          "name": "Ingco 120pcs Hand Tools Set - Hkthp21201",
+          "title": "Ingco 120pcs Hand Tools Set - Hkthp21201",
+          "slug": "677",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-be747cae4bbfb827ec82210c645d9731.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-be747cae4bbfb827ec82210c645d9731.jpg",
+          "photo_alt": "Ingco 120pcs Hand Tools Set - Hkthp21201",
+          "price": {
+            "price": 24.5,
+            "payable_price": 19.75,
+            "discount": 4.75,
+            "discount_percentage": 19
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1982
+          }
+        },
+        {
+          "id": 1385,
+          "name": "Ingco Auto Darkening Welding Helmet - Ahm001",
+          "title": "Ingco Auto Darkening Welding Helmet - Ahm001",
+          "slug": "1385",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-87fd49214f0475735f3885df5344f3b5.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-87fd49214f0475735f3885df5344f3b5.jpg",
+          "photo_alt": "Ingco Auto Darkening Welding Helmet - Ahm001",
+          "price": {
+            "price": 24.75,
+            "payable_price": 24.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1994
+          }
+        },
+        {
+          "id": 2823,
+          "name": "Ingco Cordless Blower - 20V",
+          "title": "Ingco Cordless Blower - 20V",
+          "slug": "2823",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-34ad0f8057f55442cbb84fb0c9ba034a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-34ad0f8057f55442cbb84fb0c9ba034a.webp",
+          "photo_alt": "Ingco Cordless Blower - 20V",
+          "price": {
+            "price": 19.9,
+            "payable_price": 19.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1968
+          }
+        },
+        {
+          "id": 8,
+          "name": "Welding machine 200 Neo",
+          "title": "Welding machine 200 Neo",
+          "slug": "8",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-fba19fb568db5998ad70b12e90ab9ef7.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-fba19fb568db5998ad70b12e90ab9ef7.webp",
+          "photo_alt": "Welding machine 200 Neo",
+          "price": {
+            "price": 25.9,
+            "payable_price": 25.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 7998
+          }
+        },
+        {
+          "id": 652,
+          "name": "Aluminum Tools Set Box -187 Pcs",
+          "title": "Aluminum Tools Set Box -187 Pcs",
+          "slug": "652",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e0dc285291bfba401e8d09755db20c79.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e0dc285291bfba401e8d09755db20c79.jpg",
+          "photo_alt": "Aluminum Tools Set Box -187 Pcs",
+          "price": {
+            "price": 23.9,
+            "payable_price": 23.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1897
+          }
+        },
+        {
+          "id": 610,
+          "name": "6 piece welding magnet set",
+          "title": "6 piece welding magnet set",
+          "slug": "610",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-64955d53aa6624a5404ae940f7b969d4.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-64955d53aa6624a5404ae940f7b969d4.jpg",
+          "photo_alt": "6 piece welding magnet set",
+          "price": {
+            "price": 8.25,
+            "payable_price": 8.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1991
+          }
+        },
+        {
+          "id": 2035,
+          "name": "Harden 39Pcs Reparing Tools Set",
+          "title": "Harden 39Pcs Reparing Tools Set",
+          "slug": "2035",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-5fe37fd5525b97afd87dfe545f2e9e0f.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-5fe37fd5525b97afd87dfe545f2e9e0f.webp",
+          "photo_alt": "Harden 39Pcs Reparing Tools Set",
+          "price": {
+            "price": 12.25,
+            "payable_price": 12.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1
+          }
+        },
+        {
+          "id": 293,
+          "name": "Ingco Infrared Thermometer - HIT010381",
+          "title": "Ingco Infrared Thermometer - HIT010381",
+          "slug": "293",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e1b3b6ef17a7d60eba44aab01f16b670.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e1b3b6ef17a7d60eba44aab01f16b670.jpg",
+          "photo_alt": "Ingco Infrared Thermometer - HIT010381",
+          "price": {
+            "price": 14.75,
+            "payable_price": 14.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1909
+          }
+        },
+        {
+          "id": 1589,
+          "name": "Multifunction Tools Ingco 300 Watt - Mf3008",
+          "title": "Multifunction Tools Ingco 300 Watt - Mf3008",
+          "slug": "1589",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-50dfce8a923859a48c431c7437b3d9bc.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-50dfce8a923859a48c431c7437b3d9bc.jpg",
+          "photo_alt": "Multifunction Tools Ingco 300 Watt - Mf3008",
+          "price": {
+            "price": 19.75,
+            "payable_price": 19.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1987
+          }
+        },
+        {
+          "id": 631,
+          "name": "Ingco Paint Sprayer - Spg3508 Coating - بينت سبري",
+          "title": "Ingco Paint Sprayer - Spg3508 Coating - بينت سبري",
+          "slug": "631",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-55c71ac1e4e73f18c65e22f1cfa6c430.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-55c71ac1e4e73f18c65e22f1cfa6c430.jpg",
+          "photo_alt": "Ingco Paint Sprayer - Spg3508 Coating - بينت سبري",
+          "price": {
+            "price": 11.5,
+            "payable_price": 11.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1909
+          }
+        },
+        {
+          "id": 3421,
+          "name": "shattaf hand sprayer aqua neom- germany- black",
+          "title": "shattaf hand sprayer aqua neom- germany- black",
+          "slug": "3421",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a717b5628c9079e6359131a63b9bf741.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a717b5628c9079e6359131a63b9bf741.webp",
+          "photo_alt": "shattaf hand sprayer aqua neom- germany- black",
+          "price": {
+            "price": 6.9,
+            "payable_price": 6.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1757
+          }
+        },
+        {
+          "id": 2742,
+          "name": "Kendo Laser Distance Meter - 60m",
+          "title": "Kendo Laser Distance Meter - 60m",
+          "slug": "2742",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e592ab9a595c2220213ede8dd8a24793.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e592ab9a595c2220213ede8dd8a24793.webp",
+          "photo_alt": "Kendo Laser Distance Meter - 60m",
+          "price": {
+            "price": 22.75,
+            "payable_price": 22.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1962
+          }
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Cleaning Materials",
+      "slug": "35",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 1674,
+          "name": "Oven And Cookware Cleaner - 500g",
+          "title": "Oven And Cookware Cleaner - 500g",
+          "slug": "1674",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-22b716539566acbbf56b985f8c63f373.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-22b716539566acbbf56b985f8c63f373.jpeg",
+          "photo_alt": "Oven And Cookware Cleaner - 500g",
+          "price": {
+            "price": 1.25,
+            "payable_price": 1.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1327
+          }
+        },
+        {
+          "id": 1883,
+          "name": "Toilet Gels - Antibacterial",
+          "title": "Toilet Gels - Antibacterial",
+          "slug": "1883",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-957c756a3168e56f13f7a67cd30df92f.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-957c756a3168e56f13f7a67cd30df92f.webp",
+          "photo_alt": "Toilet Gels - Antibacterial",
+          "price": {
+            "price": 1.25,
+            "payable_price": 1.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 7596
+          }
+        },
+        {
+          "id": 2020,
+          "name": "Washing Machine Cleaner",
+          "title": "Washing Machine Cleaner",
+          "slug": "2020",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-86a556add5e20e7700a2cb535217c027.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-86a556add5e20e7700a2cb535217c027.jpg",
+          "photo_alt": "Washing Machine Cleaner",
+          "price": {
+            "price": 1.5,
+            "payable_price": 1.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 625
+          }
+        },
+        {
+          "id": 1180,
+          "name": "Drain Opener",
+          "title": "Drain Opener",
+          "slug": "1180",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-61b0c3f7d250c56c58aae3637b279bdc.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-61b0c3f7d250c56c58aae3637b279bdc.jpg",
+          "photo_alt": "Drain Opener",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 863
+          }
+        },
+        {
+          "id": 2557,
+          "name": "Multi - Purpose Cleaner",
+          "title": "Multi - Purpose Cleaner",
+          "slug": "2557",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-279507fdb68844ebd7423b7ed278685d.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-279507fdb68844ebd7423b7ed278685d.webp",
+          "photo_alt": "Multi - Purpose Cleaner",
+          "price": {
+            "price": 2.75,
+            "payable_price": 2.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1765
+          }
+        },
+        {
+          "id": 1296,
+          "name": "Adhesive & Sticker remover spray 450ml",
+          "title": "Adhesive & Sticker remover spray 450ml",
+          "slug": "1296",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d5ff22a8da5051e2dad5dfc53b1d85f1.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d5ff22a8da5051e2dad5dfc53b1d85f1.webp",
+          "photo_alt": "Adhesive & Sticker remover spray 450ml",
+          "price": {
+            "price": 2.25,
+            "payable_price": 2.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1057
+          }
+        },
+        {
+          "id": 2066,
+          "name": "Natural Beeswax For Ｗood - 40g",
+          "title": "Natural Beeswax For Ｗood - 40g",
+          "slug": "2066",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-0c4e5ed30848d88d27537dd19704bf5d.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-0c4e5ed30848d88d27537dd19704bf5d.jpg",
+          "photo_alt": "Natural Beeswax For Ｗood - 40g",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1703
+          }
+        },
+        {
+          "id": 2556,
+          "name": "Ceramlic Cleaner - 5L",
+          "title": "Ceramlic Cleaner - 5L",
+          "slug": "2556",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-9761c2deb5a7476e90ee21b0765d8798.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-9761c2deb5a7476e90ee21b0765d8798.webp",
+          "photo_alt": "Ceramlic Cleaner - 5L",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1630
+          }
+        },
+        {
+          "id": 2652,
+          "name": "KWIK Furniture Polish",
+          "title": "KWIK Furniture Polish",
+          "slug": "2652",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d2984fb252e7f67a6f2456341a606375.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d2984fb252e7f67a6f2456341a606375.webp",
+          "photo_alt": "KWIK Furniture Polish",
+          "price": {
+            "price": 0.95,
+            "payable_price": 0.95,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1890
+          }
+        },
+        {
+          "id": 1663,
+          "name": "Sani Sticks Drain Cleaner",
+          "title": "Sani Sticks Drain Cleaner",
+          "slug": "1663",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-0344768252edd493e004fb1038d71578.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-0344768252edd493e004fb1038d71578.webp",
+          "photo_alt": "Sani Sticks Drain Cleaner",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 7978
+          }
+        },
+        {
+          "id": 3130,
+          "name": "Toilet Cleaning Effervescent Tablets",
+          "title": "Toilet Cleaning Effervescent Tablets",
+          "slug": "3130",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e0461ea80178b4658445cef00127aa25.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e0461ea80178b4658445cef00127aa25.webp",
+          "photo_alt": "Toilet Cleaning Effervescent Tablets",
+          "price": {
+            "price": 1.5,
+            "payable_price": 1.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1467
+          }
+        },
+        {
+          "id": 2929,
+          "name": "Drain Foam Cleaner 450ml",
+          "title": "Drain Foam Cleaner 450ml",
+          "slug": "2929",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d564afaa725292ec5d12b0eac2aca460.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d564afaa725292ec5d12b0eac2aca460.webp",
+          "photo_alt": "Drain Foam Cleaner 450ml",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "out_of_stock",
+          "product_inventory": {
+            "stock": 10
+          }
+        },
+        {
+          "id": 2606,
+          "name": "Pipe Drain Cleaner - 1000ml",
+          "title": "Pipe Drain Cleaner - 1000ml",
+          "slug": "2606",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-2195761516953ca3ae6b2575c066335c.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-2195761516953ca3ae6b2575c066335c.webp",
+          "photo_alt": "Pipe Drain Cleaner - 1000ml",
+          "price": {
+            "price": 3.9,
+            "payable_price": 3.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1742
+          }
+        },
+        {
+          "id": 1682,
+          "name": "Sink And Drain Cleaner",
+          "title": "Sink And Drain Cleaner",
+          "slug": "1682",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-af4b0de3688f6016a96070f7548a6b28.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-af4b0de3688f6016a96070f7548a6b28.webp",
+          "photo_alt": "Sink And Drain Cleaner",
+          "price": {
+            "price": 1.25,
+            "payable_price": 1.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1665
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Coffee & Tea Machine",
+      "slug": "26",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 934,
+          "name": "Electric Samovar For Tea",
+          "title": "Electric Samovar For Tea",
+          "slug": "934",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-6fc6f09d1905a9044a2a0964f6dc858b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-6fc6f09d1905a9044a2a0964f6dc858b.webp",
+          "photo_alt": "Electric Samovar For Tea",
+          "price": {
+            "price": 18.75,
+            "payable_price": 17.9,
+            "discount": 0.8500000000000014,
+            "discount_percentage": 5
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1885
+          }
+        },
+        {
+          "id": 966,
+          "name": "Electric Coffee Mug Warmer",
+          "title": "Electric Coffee Mug Warmer",
+          "slug": "966",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b47f28ff05f38431a5373484504519d4.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b47f28ff05f38431a5373484504519d4.jpg",
+          "photo_alt": "Electric Coffee Mug Warmer",
+          "price": {
+            "price": 6.75,
+            "payable_price": 6.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 3936
+          }
+        },
+        {
+          "id": 3110,
+          "name": "Tea Pot 1100Ml",
+          "title": "Tea Pot 1100Ml",
+          "slug": "3110",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a079738cc72f4730c625e7c4d19f2358.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a079738cc72f4730c625e7c4d19f2358.webp",
+          "photo_alt": "Tea Pot 1100Ml",
+          "price": {
+            "price": 4.25,
+            "payable_price": 4.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1986
+          }
+        },
+        {
+          "id": 845,
+          "name": "Arabian Electric Coffee Maker gulf",
+          "title": "Arabian Electric Coffee Maker gulf",
+          "slug": "845",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-11a0c0f65fc4cf82df47c17268845363.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-11a0c0f65fc4cf82df47c17268845363.jpeg",
+          "photo_alt": "Arabian Electric Coffee Maker gulf",
+          "price": {
+            "price": 16.9,
+            "payable_price": 16.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1044
+          }
+        },
+        {
+          "id": 3488,
+          "name": "Turkish Coffee Maker",
+          "title": "Turkish Coffee Maker",
+          "slug": "3488",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-53ffa65c62f2d79404a060b47f3ff5ac.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-53ffa65c62f2d79404a060b47f3ff5ac.webp",
+          "photo_alt": "Turkish Coffee Maker",
+          "price": {
+            "price": 9.25,
+            "payable_price": 9.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1982
+          }
+        },
+        {
+          "id": 2917,
+          "name": "Portable Coffee maker Gulf Dallah for Trips & Travel",
+          "title": "Portable Coffee maker Gulf Dallah for Trips & Travel",
+          "slug": "2917",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-7ab0ac7ab868933b9b00142e02b4c57f.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-7ab0ac7ab868933b9b00142e02b4c57f.webp",
+          "photo_alt": "Portable Coffee maker Gulf Dallah for Trips & Travel",
+          "price": {
+            "price": 19.9,
+            "payable_price": 19.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1586
+          }
+        },
+        {
+          "id": 1434,
+          "name": "Coffee Grinder",
+          "title": "Coffee Grinder",
+          "slug": "1434",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-4da24dd3d9840354dae271d614daa3ea.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-4da24dd3d9840354dae271d614daa3ea.webp",
+          "photo_alt": "Coffee Grinder",
+          "price": {
+            "price": 5.75,
+            "payable_price": 3.9,
+            "discount": 1.85,
+            "discount_percentage": 32
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1670
+          }
+        },
+        {
+          "id": 3111,
+          "name": "glass Tea Pot 800ml",
+          "title": "glass Tea Pot 800ml",
+          "slug": "3111",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-ddd8922c6a7e6645b290acd8c9ad46ab.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-ddd8922c6a7e6645b290acd8c9ad46ab.webp",
+          "photo_alt": "glass Tea Pot 800ml",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1965
+          }
+        },
+        {
+          "id": 992,
+          "name": "Turkish Coffee Machine 800w",
+          "title": "Turkish Coffee Machine 800w",
+          "slug": "992",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-59815fa917034f01b1fb1b808d00ed47.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-59815fa917034f01b1fb1b808d00ed47.webp",
+          "photo_alt": "Turkish Coffee Machine 800w",
+          "price": {
+            "price": 15,
+            "payable_price": 6.9,
+            "discount": 8.1,
+            "discount_percentage": 54
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1709
+          }
+        },
+        {
+          "id": 1461,
+          "name": "Multi Capsule Coffee Machine 3-In-1 Nespresso - Powder - Dolce",
+          "title": "Multi Capsule Coffee Machine 3-In-1 Nespresso - Powder - Dolce",
+          "slug": "1461",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-484edc2f9c81424dbb360a97a3e98454.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-484edc2f9c81424dbb360a97a3e98454.webp",
+          "photo_alt": "Multi Capsule Coffee Machine 3-In-1 Nespresso - Powder - Dolce",
+          "price": {
+            "price": 23.75,
+            "payable_price": 23.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1883
+          }
+        },
+        {
+          "id": 1280,
+          "name": "Sayona 1850W Glass Heating Electric Kettle 1.7L - Sgk-4348",
+          "title": "Sayona 1850W Glass Heating Electric Kettle 1.7L - Sgk-4348",
+          "slug": "1280",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-40300de391d8f227f1aa4b2e14887c25.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-40300de391d8f227f1aa4b2e14887c25.jpg",
+          "photo_alt": "Sayona 1850W Glass Heating Electric Kettle 1.7L - Sgk-4348",
+          "price": {
+            "price": 9.75,
+            "payable_price": 9.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1992
+          }
+        },
+        {
+          "id": 1230,
+          "name": "Moka Pot Coffee Maker",
+          "title": "Moka Pot Coffee Maker",
+          "slug": "1230",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-34b3e40f71e4920b8bdfb0261d0a0ad5.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-34b3e40f71e4920b8bdfb0261d0a0ad5.jpg",
+          "photo_alt": "Moka Pot Coffee Maker",
+          "price": {
+            "price": 6.25,
+            "payable_price": 6.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 5988
+          }
+        },
+        {
+          "id": 1435,
+          "name": "Double Coffee Maker",
+          "title": "Double Coffee Maker",
+          "slug": "1435",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-c3bb23e46d53bbaf1e7d25252ae428ad.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-c3bb23e46d53bbaf1e7d25252ae428ad.webp",
+          "photo_alt": "Double Coffee Maker",
+          "price": {
+            "price": 8.25,
+            "payable_price": 8.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1998
+          }
+        },
+        {
+          "id": 2468,
+          "name": "Water Electric Kettle - 1800ml",
+          "title": "Water Electric Kettle - 1800ml",
+          "slug": "2468",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-65ae7c2e8df28679c7b705c3d36bc7f0.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-65ae7c2e8df28679c7b705c3d36bc7f0.webp",
+          "photo_alt": "Water Electric Kettle - 1800ml",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1952
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Reed Diffuser",
+      "slug": "32",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": []
+    },
+    {
+      "id": 34,
+      "name": "MEDICAL PRODUCTS",
+      "slug": "34",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 3119,
+          "name": "Warts Remover Pads",
+          "title": "Warts Remover Pads",
+          "slug": "3119",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a12a2e38d7f8f790e8a7b2123bd792f5.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a12a2e38d7f8f790e8a7b2123bd792f5.webp",
+          "photo_alt": "Warts Remover Pads",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1918
+          }
+        },
+        {
+          "id": 2004,
+          "name": "Kinoki Cleaning Detox Foot Pad - 10pads",
+          "title": "Kinoki Cleaning Detox Foot Pad - 10pads",
+          "slug": "2004",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-21022e3777ffd6ef36b38f95bbe21f1a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-21022e3777ffd6ef36b38f95bbe21f1a.webp",
+          "photo_alt": "Kinoki Cleaning Detox Foot Pad - 10pads",
+          "price": {
+            "price": 2.9,
+            "payable_price": 2.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1515
+          }
+        },
+        {
+          "id": 1984,
+          "name": "Back Adhesive Pad",
+          "title": "Back Adhesive Pad",
+          "slug": "1984",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-2b4fcdcc883fcb5a66ef448ebc824407.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-2b4fcdcc883fcb5a66ef448ebc824407.webp",
+          "photo_alt": "Back Adhesive Pad",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1833
+          }
+        },
+        {
+          "id": 2235,
+          "name": "Adhesive Patch Back Plaster To Relieve Muscle Tension",
+          "title": "Adhesive Patch Back Plaster To Relieve Muscle Tension",
+          "slug": "2235",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-fe7a09cd49008f150fd7f05f9c03d604.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-fe7a09cd49008f150fd7f05f9c03d604.webp",
+          "photo_alt": "Adhesive Patch Back Plaster To Relieve Muscle Tension",
+          "price": {
+            "price": 2.25,
+            "payable_price": 2.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1851
+          }
+        },
+        {
+          "id": 1260,
+          "name": "3 in 1 Portable Nebulizer Mask - Mesh Inhaler Nebulizer",
+          "title": "3 in 1 Portable Nebulizer Mask - Mesh Inhaler Nebulizer",
+          "slug": "1260",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-da81441e124844f022c4aa589d171a58.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-da81441e124844f022c4aa589d171a58.webp",
+          "photo_alt": "3 in 1 Portable Nebulizer Mask - Mesh Inhaler Nebulizer",
+          "price": {
+            "price": 4.9,
+            "payable_price": 4.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 199582
+          }
+        },
+        {
+          "id": 1454,
+          "name": "Find Back Ear Wax Removal",
+          "title": "Find Back Ear Wax Removal",
+          "slug": "1454",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f19da0382631b1ee01b0c1821c84b5ff.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f19da0382631b1ee01b0c1821c84b5ff.webp",
+          "photo_alt": "Find Back Ear Wax Removal",
+          "price": {
+            "price": 2.75,
+            "payable_price": 2.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1696
+          }
+        },
+        {
+          "id": 3068,
+          "name": "WaterProof Cast Bandage Protector",
+          "title": "WaterProof Cast Bandage Protector",
+          "slug": "3068",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-0e5b9e8965edb8554c60cfdc8f5ec05e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-0e5b9e8965edb8554c60cfdc8f5ec05e.webp",
+          "photo_alt": "WaterProof Cast Bandage Protector",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1978
+          }
+        },
+        {
+          "id": 2236,
+          "name": "Shoulder Patch",
+          "title": "Shoulder Patch",
+          "slug": "2236",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-788fe3efa393c95ca22fe3d2235b528c.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-788fe3efa393c95ca22fe3d2235b528c.webp",
+          "photo_alt": "Shoulder Patch",
+          "price": {
+            "price": 4.5,
+            "payable_price": 4.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1832
+          }
+        },
+        {
+          "id": 1945,
+          "name": "Foot Silicone Healthy Heel",
+          "title": "Foot Silicone Healthy Heel",
+          "slug": "1945",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-5d2c9ca4692da70d3513e21f19b0f5ea.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-5d2c9ca4692da70d3513e21f19b0f5ea.webp",
+          "photo_alt": "Foot Silicone Healthy Heel",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1866
+          }
+        },
+        {
+          "id": 2488,
+          "name": "Hallux valgus splint",
+          "title": "Hallux valgus splint",
+          "slug": "2488",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-11db08cf564a0885f8beb7e0c452569d.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-11db08cf564a0885f8beb7e0c452569d.webp",
+          "photo_alt": "Hallux valgus splint",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1874
+          }
+        },
+        {
+          "id": 2402,
+          "name": "Adhesive Patch To Tighten The Waist And Abdomen Area",
+          "title": "Adhesive Patch To Tighten The Waist And Abdomen Area",
+          "slug": "2402",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b3095217b861d766623bdbbbde6f11a6.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b3095217b861d766623bdbbbde6f11a6.webp",
+          "photo_alt": "Adhesive Patch To Tighten The Waist And Abdomen Area",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1990
+          }
+        },
+        {
+          "id": 2237,
+          "name": "Ginger And Wormwood Foot Pad Adhesive Patch",
+          "title": "Ginger And Wormwood Foot Pad Adhesive Patch",
+          "slug": "2237",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-5cfee51989b18345fa18dfb6412f7c2b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-5cfee51989b18345fa18dfb6412f7c2b.webp",
+          "photo_alt": "Ginger And Wormwood Foot Pad Adhesive Patch",
+          "price": {
+            "price": 4.5,
+            "payable_price": 4.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1826
+          }
+        },
+        {
+          "id": 2639,
+          "name": "Knee Stickers - 12pcs",
+          "title": "Knee Stickers - 12pcs",
+          "slug": "2639",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-923a03b6d6498c4792a708010a03803a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-923a03b6d6498c4792a708010a03803a.webp",
+          "photo_alt": "Knee Stickers - 12pcs",
+          "price": {
+            "price": 4.5,
+            "payable_price": 4.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1941
+          }
+        },
+        {
+          "id": 1027,
+          "name": "Automatic Blood Pressure Checker",
+          "title": "Automatic Blood Pressure Checker",
+          "slug": "1027",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-352142efd3020caecbbf000baf292488.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-352142efd3020caecbbf000baf292488.webp",
+          "photo_alt": "Automatic Blood Pressure Checker",
+          "price": {
+            "price": 12.5,
+            "payable_price": 12.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1734
+          }
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Car Accessories",
+      "slug": "45",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 496,
+          "name": "Windshield Repair Kit for car",
+          "title": "Windshield Repair Kit for car",
+          "slug": "496",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-9afca2c61a37af869e3066a4a24f5a29.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-9afca2c61a37af869e3066a4a24f5a29.jpg",
+          "photo_alt": "Windshield Repair Kit for car",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1829
+          }
+        },
+        {
+          "id": 730,
+          "name": "Mini Polishing Pads Kits",
+          "title": "Mini Polishing Pads Kits",
+          "slug": "730",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-fbdf0313b94a46970e2453675479df02.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-fbdf0313b94a46970e2453675479df02.jpg",
+          "photo_alt": "Mini Polishing Pads Kits",
+          "price": {
+            "price": 11.75,
+            "payable_price": 9.9,
+            "discount": 1.8499999999999996,
+            "discount_percentage": 16
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1974
+          }
+        },
+        {
+          "id": 2898,
+          "name": "Parking Lock With Remote Control",
+          "title": "Parking Lock With Remote Control",
+          "slug": "2898",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-c09eb8f723a9ed3f1b4e2c81f547aa8b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-c09eb8f723a9ed3f1b4e2c81f547aa8b.webp",
+          "photo_alt": "Parking Lock With Remote Control",
+          "price": {
+            "price": 29.75,
+            "payable_price": 29.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1874
+          }
+        },
+        {
+          "id": 2821,
+          "name": "Foldable Bubble Sunshade",
+          "title": "Foldable Bubble Sunshade",
+          "slug": "2821",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-253859fc4efc4b2d81907ede80722a77.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-253859fc4efc4b2d81907ede80722a77.webp",
+          "photo_alt": "Foldable Bubble Sunshade",
+          "price": {
+            "price": 1.5,
+            "payable_price": 1.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1819
+          }
+        },
+        {
+          "id": 2696,
+          "name": "Solar Car Cooler - car fan",
+          "title": "Solar Car Cooler - car fan",
+          "slug": "2696",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-14e39e127a073abccbb428249be95221.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-14e39e127a073abccbb428249be95221.webp",
+          "photo_alt": "Solar Car Cooler - car fan",
+          "price": {
+            "price": 7.5,
+            "payable_price": 7.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1963
+          }
+        },
+        {
+          "id": 1754,
+          "name": "Color Easy Car Scratch Remover",
+          "title": "Color Easy Car Scratch Remover",
+          "slug": "1754",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-860c4dd502a805f07f0392aaa62acd8a.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-860c4dd502a805f07f0392aaa62acd8a.jpg",
+          "photo_alt": "Color Easy Car Scratch Remover",
+          "price": {
+            "price": 1.75,
+            "payable_price": 1.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1804
+          }
+        },
+        {
+          "id": 700,
+          "name": "automatic fuel fluid water siphon pump",
+          "title": "automatic fuel fluid water siphon pump",
+          "slug": "700",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a9cd4c68a1d0a2c0c8023c52766a3b8b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a9cd4c68a1d0a2c0c8023c52766a3b8b.webp",
+          "photo_alt": "automatic fuel fluid water siphon pump",
+          "price": {
+            "price": 1.7,
+            "payable_price": 1.7,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 100000
+          }
+        },
+        {
+          "id": 1684,
+          "name": "Manual Pump Car Fuel Tank Sucker - 1.5m",
+          "title": "Manual Pump Car Fuel Tank Sucker - 1.5m",
+          "slug": "1684",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a0298814d9beedda161ab85f6ac75191.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a0298814d9beedda161ab85f6ac75191.jpg",
+          "photo_alt": "Manual Pump Car Fuel Tank Sucker - 1.5m",
+          "price": {
+            "price": 2.25,
+            "payable_price": 2.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1817
+          }
+        },
+        {
+          "id": 2779,
+          "name": "Car Fan Auto Front",
+          "title": "Car Fan Auto Front",
+          "slug": "2779",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-4ecb1e85087975dc4830b00dbbb19964.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-4ecb1e85087975dc4830b00dbbb19964.webp",
+          "photo_alt": "Car Fan Auto Front",
+          "price": {
+            "price": 4.25,
+            "payable_price": 4.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1984
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "To clean cars",
+      "slug": "11",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 1752,
+          "name": "Wash And Wax Car Shampoo",
+          "title": "Wash And Wax Car Shampoo",
+          "slug": "1752",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-2f73e8ff7e53fe120f2784d2016388bc.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-2f73e8ff7e53fe120f2784d2016388bc.jpg",
+          "photo_alt": "Wash And Wax Car Shampoo",
+          "price": {
+            "price": 0.9,
+            "payable_price": 0.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1741
+          }
+        },
+        {
+          "id": 1815,
+          "name": "Car Wash Water pipe set",
+          "title": "Car Wash Water pipe set",
+          "slug": "1815",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-82b7b17dcdd03c19d569ccf003cf2b01.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-82b7b17dcdd03c19d569ccf003cf2b01.jpeg",
+          "photo_alt": "Car Wash Water pipe set",
+          "price": {
+            "price": 9.75,
+            "payable_price": 9.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "out_of_stock",
+          "product_inventory": {
+            "stock": 10
+          }
+        },
+        {
+          "id": 1765,
+          "name": "Mini Car Washing Machine Portable",
+          "title": "Mini Car Washing Machine Portable",
+          "slug": "1765",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-4243fabf8ecccb3979755d88eabd8018.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-4243fabf8ecccb3979755d88eabd8018.jpg",
+          "photo_alt": "Mini Car Washing Machine Portable",
+          "price": {
+            "price": 14.75,
+            "payable_price": 14.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1982
+          }
+        },
+        {
+          "id": 2932,
+          "name": "Tire Foam Cleaner",
+          "title": "Tire Foam Cleaner",
+          "slug": "2932",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f93086eea93ccf627717fce48543d596.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f93086eea93ccf627717fce48543d596.webp",
+          "photo_alt": "Tire Foam Cleaner",
+          "price": {
+            "price": 2.25,
+            "payable_price": 1.5,
+            "discount": 0.75,
+            "discount_percentage": 33
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1643
+          }
+        },
+        {
+          "id": 2946,
+          "name": "Car Shampoo",
+          "title": "Car Shampoo",
+          "slug": "2946",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-ac5d5700302d25f7e81800f548a361d2.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-ac5d5700302d25f7e81800f548a361d2.webp",
+          "photo_alt": "Car Shampoo",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1583
+          }
+        },
+        {
+          "id": 2923,
+          "name": "Herios Crystal Coating Spray For Car",
+          "title": "Herios Crystal Coating Spray For Car",
+          "slug": "2923",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a5b8fbf372d6bfb3a30dc3972fb0dc27.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a5b8fbf372d6bfb3a30dc3972fb0dc27.webp",
+          "photo_alt": "Herios Crystal Coating Spray For Car",
+          "price": {
+            "price": 3.5,
+            "payable_price": 3.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1816
+          }
+        },
+        {
+          "id": 1258,
+          "name": "Shine And Protect Cars Leather Spray With Strawberry Smell",
+          "title": "Shine And Protect Cars Leather Spray With Strawberry Smell",
+          "slug": "1258",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-da8b592a65986ba19ac8ebde3d7189a7.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-da8b592a65986ba19ac8ebde3d7189a7.webp",
+          "photo_alt": "Shine And Protect Cars Leather Spray With Strawberry Smell",
+          "price": {
+            "price": 1.75,
+            "payable_price": 1.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1894
+          }
+        },
+        {
+          "id": 2403,
+          "name": "Car Wash Spray Pressure",
+          "title": "Car Wash Spray Pressure",
+          "slug": "2403",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-68c764414ac3bfd5d26343d43ba6b798.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-68c764414ac3bfd5d26343d43ba6b798.webp",
+          "photo_alt": "Car Wash Spray Pressure",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1767
+          }
+        },
+        {
+          "id": 2822,
+          "name": "Water Powered Spin Cleaner - Car Wash",
+          "title": "Water Powered Spin Cleaner - Car Wash",
+          "slug": "2822",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-749c137eb864a84b3762b560857ed9e5.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-749c137eb864a84b3762b560857ed9e5.webp",
+          "photo_alt": "Water Powered Spin Cleaner - Car Wash",
+          "price": {
+            "price": 6.75,
+            "payable_price": 6.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1978
+          }
+        },
+        {
+          "id": 2924,
+          "name": "pitch cleaner -  Bug & Tar Cleaner flamingo",
+          "title": "pitch cleaner -  Bug & Tar Cleaner flamingo",
+          "slug": "2924",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-f42836cb90285fb6c567b27ddf76bf45.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-f42836cb90285fb6c567b27ddf76bf45.webp",
+          "photo_alt": "pitch cleaner -  Bug & Tar Cleaner flamingo",
+          "price": {
+            "price": 2.75,
+            "payable_price": 2.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1866
+          }
+        },
+        {
+          "id": 2930,
+          "name": "Herios Nano Glass Oil Film Remover Cream",
+          "title": "Herios Nano Glass Oil Film Remover Cream",
+          "slug": "2930",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-d4e0701bb19a0a3f19aa8c9b993db2cf.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-d4e0701bb19a0a3f19aa8c9b993db2cf.webp",
+          "photo_alt": "Herios Nano Glass Oil Film Remover Cream",
+          "price": {
+            "price": 2.25,
+            "payable_price": 2.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1969
+          }
+        },
+        {
+          "id": 1320,
+          "name": "Fix It Pro - Car Repair Pen Scratch Remover",
+          "title": "Fix It Pro - Car Repair Pen Scratch Remover",
+          "slug": "1320",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-b1308ea0b55df4cc7d749628843977a0.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-b1308ea0b55df4cc7d749628843977a0.webp",
+          "photo_alt": "Fix It Pro - Car Repair Pen Scratch Remover",
+          "price": {
+            "price": 2.75,
+            "payable_price": 2.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 199975
+          }
+        },
+        {
+          "id": 1563,
+          "name": "Crw pressure washer - car wash",
+          "title": "Crw pressure washer - car wash",
+          "slug": "1563",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-84e94d76568943af022cf7099fae9386.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-84e94d76568943af022cf7099fae9386.webp",
+          "photo_alt": "Crw pressure washer - car wash",
+          "price": {
+            "price": 7.9,
+            "payable_price": 7.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1187
+          }
+        },
+        {
+          "id": 4794,
+          "name": "KRAWN Cordless High-Pressure Washer Gun, Rechargeable Lithium Battery, 5 M Water Pipe, 3 Nozzles (0°, 40°, Foam Spray), Portable Cleaning Tool for Car, Bike, Patio & Garden Use KW-41220",
+          "title": "KRAWN Cordless High-Pressure Washer Gun, Rechargeable Lithium Battery, 5 M Water Pipe, 3 Nozzles (0°, 40°, Foam Spray), Portable Cleaning Tool for Car, Bike, Patio & Garden Use KW-41220",
+          "slug": "4794",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-85467bb08d4ba132572a50a64d185255.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-85467bb08d4ba132572a50a64d185255.webp",
+          "photo_alt": "KRAWN Cordless High-Pressure Washer Gun, Rechargeable Lithium Battery, 5 M Water Pipe, 3 Nozzles (0°, 40°, Foam Spray), Portable Cleaning Tool for Car, Bike, Patio & Garden Use KW-41220",
+          "price": {
+            "price": 5.9,
+            "payable_price": 5.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "GLUES & ADHESIVES",
+      "slug": "18",
+      "product_block_show": true,
+      "category_banner": null,
+      "category_mobile_banner": null,
+      "category_products": [
+        {
+          "id": 3133,
+          "name": "Wall Repair And Paint Cream Coating",
+          "title": "Wall Repair And Paint Cream Coating",
+          "slug": "3133",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-150a60ad2d95e3231d72a4648db81d17.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-150a60ad2d95e3231d72a4648db81d17.webp",
+          "photo_alt": "Wall Repair And Paint Cream Coating",
+          "price": {
+            "price": 2.9,
+            "payable_price": 2.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1786
+          }
+        },
+        {
+          "id": 4542,
+          "name": "Yasen Waterproof Coating Sealer Glue 300 ML",
+          "title": "Yasen Waterproof Coating Sealer Glue 300 ML",
+          "slug": "4542",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-53a08682d5aca9e055f33da38d2b71c2.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-53a08682d5aca9e055f33da38d2b71c2.webp",
+          "photo_alt": "Yasen Waterproof Coating Sealer Glue 300 ML",
+          "price": {
+            "price": 3.5,
+            "payable_price": 3.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1603
+          }
+        },
+        {
+          "id": 4543,
+          "name": "Yasen Waterproof Coating Sealer Glue 1 Ltr",
+          "title": "Yasen Waterproof Coating Sealer Glue 1 Ltr",
+          "slug": "4543",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-09015c6a5113683717f18bec842d21e4.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-09015c6a5113683717f18bec842d21e4.webp",
+          "photo_alt": "Yasen Waterproof Coating Sealer Glue 1 Ltr",
+          "price": {
+            "price": 5.9,
+            "payable_price": 5.9,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1181
+          }
+        },
+        {
+          "id": 1066,
+          "name": "Flex Tape- 7.2 Inch",
+          "title": "Flex Tape- 7.2 Inch",
+          "slug": "1066",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-a6aadfccf622c0839db71d1cbe858ec3.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-a6aadfccf622c0839db71d1cbe858ec3.jpeg",
+          "photo_alt": "Flex Tape- 7.2 Inch",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1800
+          }
+        },
+        {
+          "id": 648,
+          "name": "PVC non-slip tape",
+          "title": "PVC non-slip tape",
+          "slug": "648",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-05b7dea8f740562d83956414ae837f81.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-05b7dea8f740562d83956414ae837f81.jpg",
+          "photo_alt": "PVC non-slip tape",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1399
+          }
+        },
+        {
+          "id": 1167,
+          "name": "Clear Double Face Tape",
+          "title": "Clear Double Face Tape",
+          "slug": "1167",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-7b6aa7c90fa3d37807d054e8e4c07f95.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-7b6aa7c90fa3d37807d054e8e4c07f95.jpg",
+          "photo_alt": "Clear Double Face Tape",
+          "price": {
+            "price": 2.5,
+            "payable_price": 1.75,
+            "discount": 0.75,
+            "discount_percentage": 30
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 999544
+          }
+        },
+        {
+          "id": 684,
+          "name": "Abro Epoxy Steel 4 Min Kwik-Set",
+          "title": "Abro Epoxy Steel 4 Min Kwik-Set",
+          "slug": "684",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-00abdfec6762345c8e59d616b01a9b20.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-00abdfec6762345c8e59d616b01a9b20.jpg",
+          "photo_alt": "Abro Epoxy Steel 4 Min Kwik-Set",
+          "price": {
+            "price": 2,
+            "payable_price": 2,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1791
+          }
+        },
+        {
+          "id": 554,
+          "name": "Aluminium Tape",
+          "title": "Aluminium Tape",
+          "slug": "554",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-290183a59e644e3f3d56ff3d197c5860.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-290183a59e644e3f3d56ff3d197c5860.jpg",
+          "photo_alt": "Aluminium Tape",
+          "price": {
+            "price": 0.75,
+            "payable_price": 0.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1851
+          }
+        },
+        {
+          "id": 1763,
+          "name": "Rose Gold  Decoration Sticker Tape - 50M",
+          "title": "Rose Gold  Decoration Sticker Tape - 50M",
+          "slug": "1763",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-861019da07beac6d8616e0f5136c53b4.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-861019da07beac6d8616e0f5136c53b4.jpeg",
+          "photo_alt": "Rose Gold  Decoration Sticker Tape - 50M",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1968
+          }
+        },
+        {
+          "id": 624,
+          "name": "Flex Tape 4 Inch",
+          "title": "Flex Tape 4 Inch",
+          "slug": "624",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e73130dc5a6f0449664d5c9ae744be82.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e73130dc5a6f0449664d5c9ae744be82.webp",
+          "photo_alt": "Flex Tape 4 Inch",
+          "price": {
+            "price": 3.75,
+            "payable_price": 2.9,
+            "discount": 0.8500000000000001,
+            "discount_percentage": 23
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1402
+          }
+        },
+        {
+          "id": 2741,
+          "name": "Door And Window Foam Weather Strip",
+          "title": "Door And Window Foam Weather Strip",
+          "slug": "2741",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-45a5dee73144dfb3987d382c821fd65d.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-45a5dee73144dfb3987d382c821fd65d.webp",
+          "photo_alt": "Door And Window Foam Weather Strip",
+          "price": {
+            "price": 2,
+            "payable_price": 2,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1414
+          }
+        },
+        {
+          "id": 3165,
+          "name": "Super Glue Bison Vinyl Plastic - Waterproof Glue",
+          "title": "Super Glue Bison Vinyl Plastic - Waterproof Glue",
+          "slug": "3165",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-638c2a0d0ba6b8791707d6de9064a808.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-638c2a0d0ba6b8791707d6de9064a808.webp",
+          "photo_alt": "Super Glue Bison Vinyl Plastic - Waterproof Glue",
+          "price": {
+            "price": 3.25,
+            "payable_price": 3.25,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1935
+          }
+        },
+        {
+          "id": 662,
+          "name": "Tape Dispensers",
+          "title": "Tape Dispensers",
+          "slug": "662",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-52fe359671d1eb5544ce0f651be89593.jpg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-52fe359671d1eb5544ce0f651be89593.jpg",
+          "photo_alt": "Tape Dispensers",
+          "price": {
+            "price": 2.75,
+            "payable_price": 2.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1931
+          }
+        },
+        {
+          "id": 2739,
+          "name": "Silicone Tape Self Fusing",
+          "title": "Silicone Tape Self Fusing",
+          "slug": "2739",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-e59dfc1ed5e07572f9d6b4867e08419a.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-e59dfc1ed5e07572f9d6b4867e08419a.webp",
+          "photo_alt": "Silicone Tape Self Fusing",
+          "price": {
+            "price": 3.75,
+            "payable_price": 3.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1919
+          }
+        },
+        {
+          "id": 2012,
+          "name": "Silicone Door Bottom Seal",
+          "title": "Silicone Door Bottom Seal",
+          "slug": "2012",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-39d183ebcfcfa1daf65c69ea84650f8b.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-39d183ebcfcfa1daf65c69ea84650f8b.webp",
+          "photo_alt": "Silicone Door Bottom Seal",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1531
+          }
+        },
+        {
+          "id": 2707,
+          "name": "Door Bottom Seal",
+          "title": "Door Bottom Seal",
+          "slug": "2707",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-26439739d4d81b90f58a3e3d169c1c9e.webp",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-26439739d4d81b90f58a3e3d169c1c9e.webp",
+          "photo_alt": "Door Bottom Seal",
+          "price": {
+            "price": 2.5,
+            "payable_price": 2.5,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1063
+          }
+        },
+        {
+          "id": 1762,
+          "name": "Silver Decoration Sticker Tape - 50M",
+          "title": "Silver Decoration Sticker Tape - 50M",
+          "slug": "1762",
+          "photo": "https://kw.sanamstore.net/uploads/product/thumb/p-976962abe7a1aea727f7751c5abc0cd9.jpeg",
+          "image": "https://kw.sanamstore.net/uploads/product/thumb/p-976962abe7a1aea727f7751c5abc0cd9.jpeg",
+          "photo_alt": "Silver Decoration Sticker Tape - 50M",
+          "price": {
+            "price": 4.75,
+            "payable_price": 4.75,
+            "discount": 0,
+            "discount_percentage": 0
+          },
+          "rating": 4.8,
+          "review": {
+            "average_rating": 4.8,
+            "total_review": 15
+          },
+          "stock_status": "in_stock",
+          "product_inventory": {
+            "stock": 1951
+          }
+        }
+      ]
+    }
+  ],
+  "bottom_banner": {
+    "id": 63,
+    "image": "https://kw.sanamstore.net/uploads/banner/b-c5f71b1ec3cbed540f50ccc0715ff939.webp",
+    "link": "https://www.instagram.com/sanam.q8?igsh=aXE0a3kzZDNvbTJq",
+    "title": "Promotional Banner"
+  },
+  "testimonial": [],
+  "offertext": "Same day delivery service if you order before 10 pm"
+}

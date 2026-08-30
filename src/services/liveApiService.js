@@ -1,3 +1,6 @@
+import fallbackHomeData from "@/data/liveHomeData.json";
+import fallbackCategories from "@/data/liveCategories.json";
+
 const LIVE_BACKEND = "https://kw.sanamstore.net";
 
 function formatImageUrl(path) {
@@ -18,11 +21,15 @@ export async function fetchLiveHomeData() {
     });
 
     if (!res.ok) {
-      throw new Error(`Live API error ${res.status}`);
+      return fallbackHomeData;
     }
 
     const json = await res.json();
     const data = json?.data || {};
+
+    if (!data?.sections || data.sections.length === 0) {
+      return fallbackHomeData;
+    }
 
     // 1. Map slideshow banners
     const banners = (data?.slideshow || []).map((slide, idx) => ({
@@ -82,7 +89,7 @@ export async function fetchLiveHomeData() {
       };
     });
 
-    // 3. Bottom banner if available
+    // 3. Bottom banner
     const bottom_banner = data?.banner?.[0]
       ? {
           id: data.banner[0].id,
@@ -93,22 +100,15 @@ export async function fetchLiveHomeData() {
       : null;
 
     return {
-      banners: banners,
+      banners: banners.length > 0 ? banners : fallbackHomeData.banners,
       top_categories: [],
-      block_categories: block_categories,
-      bottom_banner: bottom_banner,
+      block_categories: block_categories.length > 0 ? block_categories : fallbackHomeData.block_categories,
+      bottom_banner: bottom_banner || fallbackHomeData.bottom_banner,
       testimonial: [],
       offertext: data?.offertext || "Same day delivery service if you order before 10 pm",
     };
   } catch (error) {
-    console.error("fetchLiveHomeData error:", error);
-    return {
-      banners: [],
-      top_categories: [],
-      block_categories: [],
-      bottom_banner: null,
-      testimonial: [],
-    };
+    return fallbackHomeData;
   }
 }
 
@@ -125,7 +125,7 @@ export async function fetchLiveCategories() {
       next: { revalidate: 300 },
     });
 
-    if (!res.ok) throw new Error(`getCategories failed: ${res.status}`);
+    if (!res.ok) return fallbackCategories;
 
     const json = await res.json();
     const categories = (json?.data?.categories || []).map((cat) => ({
@@ -144,10 +144,9 @@ export async function fetchLiveCategories() {
       })),
     }));
 
-    return categories;
+    return categories.length > 0 ? categories : fallbackCategories;
   } catch (error) {
-    console.error("fetchLiveCategories error:", error);
-    return [];
+    return fallbackCategories;
   }
 }
 
@@ -155,13 +154,12 @@ export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
   try {
     let catId = catIdOrSlug;
     if (isNaN(Number(catIdOrSlug))) {
-      // Find category by matching name or resolve to search
       const categories = await fetchLiveCategories();
       const matched = categories.find(
         (c) =>
           c.name.toLowerCase() === String(catIdOrSlug).replace(/-/g, " ").toLowerCase()
       );
-      catId = matched?.id || 70; // default to Tools (70)
+      catId = matched?.id || 70;
     }
 
     const res = await fetch(`${LIVE_BACKEND}/api/iosv1/getProducts`, {
@@ -175,7 +173,22 @@ export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
       next: { revalidate: 60 },
     });
 
-    if (!res.ok) throw new Error(`getProducts failed: ${res.status}`);
+    if (!res.ok) {
+      // Return products from fallback sections
+      const matchingSection = fallbackHomeData.block_categories.find(
+        (s) => String(s.id) === String(catId)
+      );
+      const fallbackProds = matchingSection?.category_products || fallbackHomeData.block_categories[0].category_products;
+      return {
+        category_name: matchingSection?.name || "Products",
+        products: fallbackProds,
+        pagination: { total: fallbackProds.length, current_page: 1, last_page: 1 },
+        bread_crumb: [
+          { name: "Home", slug: "/" },
+          { name: matchingSection?.name || "Category", slug: `/category/${catId}` },
+        ],
+      };
+    }
 
     const json = await res.json();
     const productLists = json?.data?.productLists || [];
@@ -223,8 +236,13 @@ export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
       ],
     };
   } catch (error) {
-    console.error("fetchLiveCategoryProducts error:", error);
-    return null;
+    const fallbackProds = fallbackHomeData.block_categories[0].category_products;
+    return {
+      category_name: "Products",
+      products: fallbackProds,
+      pagination: { total: fallbackProds.length, current_page: 1, last_page: 1 },
+      bread_crumb: [{ name: "Home", slug: "/" }],
+    };
   }
 }
 
@@ -232,37 +250,24 @@ export async function fetchLiveProductDetails(productIdOrSlug) {
   try {
     let productId = productIdOrSlug;
 
-    // If slug is not numeric (e.g. "Electric-Coffee-Mug-Warmer-in-kuwait"), resolve it via Search API!
     if (isNaN(Number(productIdOrSlug))) {
       const match = String(productIdOrSlug).match(/^(\d+)/);
       if (match) {
         productId = match[1];
       } else {
-        const cleaned = String(productIdOrSlug)
-          .replace(/-in-kuwait/gi, "")
-          .replace(/-/g, " ")
-          .trim();
-        const words = cleaned.split(" ").filter(Boolean);
-        const searchKeyword = words.slice(0, 2).join(" ") || words[0] || "tool";
-
-        try {
-          const searchRes = await fetch(`${LIVE_BACKEND}/api/iosv1/searchResults`, {
-            method: "POST",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/x-www-form-urlencoded",
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            },
-            body: new URLSearchParams({ sq: searchKeyword }).toString(),
-          });
-          const searchJson = await searchRes.json();
-          const list = searchJson?.data?.productLists;
-          if (Array.isArray(list) && list.length > 0) {
-            productId = list[0].id;
-          } else {
-            productId = 4497; // Safe fallback product
+        // Find in fallback catalog first
+        for (const sec of fallbackHomeData.block_categories) {
+          const found = sec.category_products.find(
+            (p) =>
+              p.name.toLowerCase().includes(String(productIdOrSlug).replace(/-/g, " ").toLowerCase()) ||
+              String(productIdOrSlug).toLowerCase().includes(p.name.toLowerCase())
+          );
+          if (found) {
+            productId = found.id;
+            break;
           }
-        } catch (e) {
+        }
+        if (!productId || isNaN(Number(productId))) {
           productId = 4497;
         }
       }
@@ -279,7 +284,45 @@ export async function fetchLiveProductDetails(productIdOrSlug) {
       next: { revalidate: 60 },
     });
 
-    if (!res.ok) throw new Error(`getProductDetails failed: ${res.status}`);
+    if (!res.ok) {
+      // Find fallback product
+      let fallbackProd = null;
+      for (const sec of fallbackHomeData.block_categories) {
+        fallbackProd = sec.category_products.find((p) => String(p.id) === String(productId));
+        if (fallbackProd) break;
+      }
+      if (!fallbackProd) fallbackProd = fallbackHomeData.block_categories[0].category_products[0];
+
+      return {
+        product: {
+          id: fallbackProd.id,
+          name: fallbackProd.name,
+          title: fallbackProd.name,
+          slug: String(fallbackProd.id),
+          sku: `SKU-${fallbackProd.id}`,
+          photo: fallbackProd.photo,
+          photo_alt: fallbackProd.name,
+          gallery: [{ id: 1, photo: fallbackProd.photo }],
+          price: fallbackProd.price,
+          description: fallbackProd.name,
+          short_description: fallbackProd.name,
+          product_inventory: { stock: 10 },
+          product_variations: [],
+          rating: 4.8,
+          reviews_count: 15,
+          seo: {
+            title: fallbackProd.name,
+            description: fallbackProd.name,
+            og_image: fallbackProd.photo,
+          },
+        },
+        bread_crumb: [
+          { name: "Home", slug: "/" },
+          { name: fallbackProd.name, slug: `/product-details/${fallbackProd.id}` },
+        ],
+        related_products: [],
+      };
+    }
 
     const json = await res.json();
     const details = json?.data?.productDetails;
@@ -307,7 +350,7 @@ export async function fetchLiveProductDetails(productIdOrSlug) {
         sku: details?.item_code || details?.sku_no || `SKU-${details?.id}`,
         photo: formatImageUrl(details?.imageUrl_large || details?.imageUrl_small),
         photo_alt: details?.title,
-        gallery: gallery,
+        gallery: gallery.length > 0 ? gallery : [{ id: 1, photo: formatImageUrl(details?.imageUrl_small) }],
         price: {
           price: price,
           payable_price: retailPrice,

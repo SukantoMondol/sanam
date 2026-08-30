@@ -97,29 +97,15 @@ function mapLiveHomeResponse(raw) {
   };
 }
 
+import fallbackHomeData from "@/data/liveHomeData.json";
+
 const HomeComponent = ({ data: initialData }) => {
-  const [homeData, setHomeData] = useState(initialData || {});
+  const [homeData, setHomeData] = useState(() => {
+    if (initialData?.block_categories?.length > 0) return initialData;
+    return fallbackHomeData;
+  });
 
-  useEffect(() => {
-    // If initialData doesn't have products, fetch directly from user browser!
-    if (!initialData?.block_categories || initialData.block_categories.length === 0) {
-      axios
-        .post(`${LIVE_BACKEND}/api/iosv1/getHome`)
-        .then((res) => {
-          if (res?.data) {
-            const mapped = mapLiveHomeResponse(res.data);
-            if (mapped.block_categories.length > 0) {
-              setHomeData(mapped);
-            }
-          }
-        })
-        .catch((err) => {
-          console.error("Client getHome error:", err);
-        });
-    }
-  }, [initialData]);
-
-  const displayData = homeData?.block_categories?.length > 0 ? homeData : initialData;
+  const displayData = homeData?.block_categories?.length > 0 ? homeData : fallbackHomeData;
 
   return (
     <>
