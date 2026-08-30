@@ -11,7 +11,9 @@ import {Suspense} from "react";
 import ViewItemListEvent from "@/components/util/ViewItemListEvent";
 
 const ProductListing = ({ productsData }) => {
-  const products = productsData?.products?.data || [];
+  const products = Array.isArray(productsData?.products)
+    ? productsData.products
+    : productsData?.products?.data || [];
   const itemListName =
     productsData?.category_name || productsData?.keyword || "Product Listing";
 
