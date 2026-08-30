@@ -241,7 +241,7 @@ export default function Footer() {
       }
 
       axios
-        .get(`${baseUrl}/general-settings`)
+        .get(`/api/general-settings`)
         .then((res) => {
           if (res.data?.data) {
             setGeneralSettings(res.data.data);
