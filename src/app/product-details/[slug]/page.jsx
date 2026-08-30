@@ -1,11 +1,11 @@
 import axiosInstance from "@/utils/axiosInstance";
 import Breadcrumb from "@/components/UI/Shared/Breadcrumb";
-import dynamic from "next/dynamic";
-const ProductDescription = dynamic(() =>
+import nextDynamic from "next/dynamic";
+const ProductDescription = nextDynamic(() =>
   import("@/components/Pages/ProductDetails/ProductDescription")
 );
 import ProductViewPanel from "@/components/Pages/ProductDetails/ProductViewPanel";
-const ShopMore = dynamic(() =>
+const ShopMore = nextDynamic(() =>
   import("@/components/Pages/ProductDetails/ShopMore")
 );
 
@@ -61,7 +61,8 @@ const fetchProductDetailsPageData = cache(async (slug) => {
   }
 });
 
-export const revalidate = 600; // Revalidate every 10 minutes
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const ProductDetailsPage = async ({ params }) => {
   const productDetailsData = await fetchProductDetailsPageData(

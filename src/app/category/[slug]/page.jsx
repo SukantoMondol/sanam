@@ -45,15 +45,15 @@ export async function generateMetadata({ params, searchParams }) {
   };
 }
 
-export const revalidate = 600; // Revalidate every 10 minutes
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+import { fetchLiveCategoryProducts } from "@/services/liveApiService";
 
 const fetchProductsPageData = cache(async (slug, queryParams) => {
   try {
-    const response = await axiosInstance.get(
-      `/get-products-by-category/${slug}`,
-      { params: queryParams }
-    );
-    return response?.data?.data;
+    const data = await fetchLiveCategoryProducts(slug, queryParams);
+    return data;
   } catch (error) {
     console.error("[category] fetchProductsPageData error:", error?.message || error);
     return null;

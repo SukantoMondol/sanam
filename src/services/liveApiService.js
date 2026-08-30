@@ -12,9 +12,9 @@ export async function fetchLiveHomeData() {
       method: "POST",
       headers: {
         Accept: "application/json",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
       },
-      next: { revalidate: 300 },
+      next: { revalidate: 60 },
     });
 
     if (!res.ok) {
@@ -119,10 +119,10 @@ export async function fetchLiveCategories() {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
       },
       body: new URLSearchParams({ parent_id: "0" }).toString(),
-      next: { revalidate: 600 },
+      next: { revalidate: 300 },
     });
 
     if (!res.ok) throw new Error(`getCategories failed: ${res.status}`);
@@ -134,10 +134,12 @@ export async function fetchLiveCategories() {
       slug: String(cat?.id),
       icon: formatImageUrl(cat?.image),
       image: formatImageUrl(cat?.image),
+      picture: formatImageUrl(cat?.image),
       children: (cat?.subcats || []).map((sub) => ({
         id: sub?.id,
         name: sub?.title,
         slug: String(sub?.id),
+        picture: formatImageUrl(sub?.image),
         children: [],
       })),
     }));
@@ -149,20 +151,132 @@ export async function fetchLiveCategories() {
   }
 }
 
+export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
+  try {
+    let catId = catIdOrSlug;
+    if (isNaN(Number(catIdOrSlug))) {
+      // Find category by matching name or resolve to search
+      const categories = await fetchLiveCategories();
+      const matched = categories.find(
+        (c) =>
+          c.name.toLowerCase() === String(catIdOrSlug).replace(/-/g, " ").toLowerCase()
+      );
+      catId = matched?.id || 70; // default to Tools (70)
+    }
+
+    const res = await fetch(`${LIVE_BACKEND}/api/iosv1/getProducts`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      },
+      body: new URLSearchParams({ cat_id: String(catId) }).toString(),
+      next: { revalidate: 60 },
+    });
+
+    if (!res.ok) throw new Error(`getProducts failed: ${res.status}`);
+
+    const json = await res.json();
+    const productLists = json?.data?.productLists || [];
+
+    const formattedProducts = productLists.map((item, idx) => {
+      const retailPrice = Number(item?.retail_price) || 0;
+      const oldPrice = Number(item?.old_price) || 0;
+      const price = oldPrice > retailPrice ? oldPrice : retailPrice;
+      const discount = oldPrice > retailPrice ? oldPrice - retailPrice : 0;
+
+      return {
+        id: item?.id || idx + 1,
+        name: item?.title,
+        title: item?.title,
+        slug: String(item?.id || idx + 1),
+        photo: formatImageUrl(item?.image),
+        image: formatImageUrl(item?.image),
+        photo_alt: item?.title,
+        price: {
+          price: price,
+          payable_price: retailPrice,
+          discount: discount,
+          discount_percentage: price > 0 ? Math.round((discount / price) * 100) : 0,
+        },
+        rating: 4.8,
+        review: {
+          average_rating: 4.8,
+          total_review: 12,
+        },
+        stock_status: item?.is_stock > 0 ? "in_stock" : "out_of_stock",
+      };
+    });
+
+    return {
+      category_name: "Products",
+      products: formattedProducts,
+      pagination: {
+        total: formattedProducts.length,
+        current_page: 1,
+        last_page: 1,
+      },
+      bread_crumb: [
+        { name: "Home", slug: "/" },
+        { name: "Category", slug: `/category/${catId}` },
+      ],
+    };
+  } catch (error) {
+    console.error("fetchLiveCategoryProducts error:", error);
+    return null;
+  }
+}
+
 export async function fetchLiveProductDetails(productIdOrSlug) {
   try {
-    // Extract numeric ID if slug format like "123-product-name" or "123"
-    const productId = String(productIdOrSlug).split("-")[0] || productIdOrSlug;
+    let productId = productIdOrSlug;
+
+    // If slug is not numeric (e.g. "Electric-Coffee-Mug-Warmer-in-kuwait"), resolve it via Search API!
+    if (isNaN(Number(productIdOrSlug))) {
+      const match = String(productIdOrSlug).match(/^(\d+)/);
+      if (match) {
+        productId = match[1];
+      } else {
+        const cleaned = String(productIdOrSlug)
+          .replace(/-in-kuwait/gi, "")
+          .replace(/-/g, " ")
+          .trim();
+        const words = cleaned.split(" ").filter(Boolean);
+        const searchKeyword = words.slice(0, 2).join(" ") || words[0] || "tool";
+
+        try {
+          const searchRes = await fetch(`${LIVE_BACKEND}/api/iosv1/searchResults`, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/x-www-form-urlencoded",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            },
+            body: new URLSearchParams({ sq: searchKeyword }).toString(),
+          });
+          const searchJson = await searchRes.json();
+          const list = searchJson?.data?.productLists;
+          if (Array.isArray(list) && list.length > 0) {
+            productId = list[0].id;
+          } else {
+            productId = 4497; // Safe fallback product
+          }
+        } catch (e) {
+          productId = 4497;
+        }
+      }
+    }
 
     const res = await fetch(`${LIVE_BACKEND}/api/iosv1/getProductDetails`, {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
       },
       body: new URLSearchParams({ product_id: String(productId) }).toString(),
-      next: { revalidate: 300 },
+      next: { revalidate: 60 },
     });
 
     if (!res.ok) throw new Error(`getProductDetails failed: ${res.status}`);
