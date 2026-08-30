@@ -36,7 +36,8 @@ export async function generateMetadata() {
   }
 }
 
-export const revalidate = 600; // Revalidate every 10 minutes
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 import { fetchLiveHomeData } from "@/services/liveApiService";
 

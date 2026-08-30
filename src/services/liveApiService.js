@@ -29,8 +29,11 @@ export async function fetchLiveHomeData() {
       id: slide?.id || idx + 1,
       title: "Hero Banner",
       link: slide?.link || "/",
+      url: slide?.link || "/",
       image: formatImageUrl(slide?.image),
+      picture: formatImageUrl(slide?.image),
       mobile_image: formatImageUrl(slide?.image),
+      mobile_picture: formatImageUrl(slide?.image),
       button_text: "Shop Now",
     }));
 
@@ -48,6 +51,7 @@ export async function fetchLiveHomeData() {
           title: item?.title || "Product",
           slug: String(item?.id || pIdx + 1),
           photo: formatImageUrl(item?.image),
+          image: formatImageUrl(item?.image),
           photo_alt: item?.title || "Product Image",
           price: {
             price: price,
@@ -56,7 +60,10 @@ export async function fetchLiveHomeData() {
             discount_percentage: price > 0 ? Math.round((discount / price) * 100) : 0,
           },
           rating: 4.8,
-          total_reviews: 15,
+          review: {
+            average_rating: 4.8,
+            total_review: 15,
+          },
           stock_status: item?.is_stock > 0 ? "in_stock" : "out_of_stock",
           product_inventory: {
             stock: item?.is_stock || 10,

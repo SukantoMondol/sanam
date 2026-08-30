@@ -8,7 +8,7 @@ const ProductBlockWrapper = ({ block_categories }) => {
           .filter((category) => category.product_block_show !== false)
           .map((category) => (
           <div key={`${category.name}-${category.id}`}>
-            {category.category_products.length >= 4 && (
+            {category.category_products?.length > 0 && (
               <ProductBlock category={category} />
             )}
           </div>
