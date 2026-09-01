@@ -1,5 +1,6 @@
 import fallbackHomeData from "@/data/liveHomeData.json";
 import fallbackCategories from "@/data/liveCategories.json";
+import allCategoriesProducts from "@/data/allCategoriesProducts.json";
 
 const LIVE_BACKEND = "https://kw.sanamstore.net";
 
@@ -162,38 +163,37 @@ export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
       catId = matched?.id || 70;
     }
 
-    const res = await fetch(`${LIVE_BACKEND}/api/iosv1/getProducts`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-      },
-      body: new URLSearchParams({ cat_id: String(catId) }).toString(),
-      next: { revalidate: 60 },
-    });
+    const categoryObj = (fallbackCategories || []).find(
+      (c) => String(c.id) === String(catId) || String(c.slug) === String(catId)
+    );
+    const catName = categoryObj?.name || "Products";
 
-    if (!res.ok) {
-      // Return products from fallback sections
-      const matchingSection = fallbackHomeData.block_categories.find(
-        (s) => String(s.id) === String(catId)
-      );
-      const fallbackProds = matchingSection?.category_products || fallbackHomeData.block_categories[0].category_products;
-      return {
-        category_name: matchingSection?.name || "Products",
-        products: fallbackProds,
-        pagination: { total: fallbackProds.length, current_page: 1, last_page: 1 },
-        bread_crumb: [
-          { name: "Home", slug: "/" },
-          { name: matchingSection?.name || "Category", slug: `/category/${catId}` },
-        ],
-      };
+    let rawList = allCategoriesProducts[String(catId)] || [];
+
+    try {
+      const res = await fetch(`${LIVE_BACKEND}/api/iosv1/getProducts`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        },
+        body: new URLSearchParams({ cat_id: String(catId) }).toString(),
+        next: { revalidate: 60 },
+      });
+
+      if (res.ok) {
+        const json = await res.json();
+        const liveList = json?.data?.productLists || [];
+        if (liveList.length > 0) {
+          rawList = liveList;
+        }
+      }
+    } catch (e) {
+      // use bundled rawList
     }
 
-    const json = await res.json();
-    const productLists = json?.data?.productLists || [];
-
-    const formattedProducts = productLists.map((item, idx) => {
+    const formattedProducts = rawList.map((item, idx) => {
       const retailPrice = Number(item?.retail_price) || 0;
       const oldPrice = Number(item?.old_price) || 0;
       const price = oldPrice > retailPrice ? oldPrice : retailPrice;
@@ -223,7 +223,7 @@ export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
     });
 
     return {
-      category_name: "Products",
+      category_name: catName,
       products: formattedProducts,
       pagination: {
         total: formattedProducts.length,
@@ -232,15 +232,14 @@ export async function fetchLiveCategoryProducts(catIdOrSlug, queryParams = {}) {
       },
       bread_crumb: [
         { name: "Home", slug: "/" },
-        { name: "Category", slug: `/category/${catId}` },
+        { name: catName, slug: `/category/${catId}` },
       ],
     };
   } catch (error) {
-    const fallbackProds = fallbackHomeData.block_categories[0].category_products;
     return {
       category_name: "Products",
-      products: fallbackProds,
-      pagination: { total: fallbackProds.length, current_page: 1, last_page: 1 },
+      products: [],
+      pagination: { total: 0, current_page: 1, last_page: 1 },
       bread_crumb: [{ name: "Home", slug: "/" }],
     };
   }
