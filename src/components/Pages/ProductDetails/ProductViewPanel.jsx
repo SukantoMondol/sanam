@@ -69,11 +69,15 @@ const ProductViewPanel = ({
 
   const cartData = {
     product_id: productDetailsData?.product?.id,
+    product_name: productDetailsData?.product?.name || productDetailsData?.product?.title,
+    photo: productDetailsData?.product?.photo || productDetailsData?.product?.photos?.[0]?.photo_full,
+    payable_price: price?.payable_price || productDetailsData?.product?.price?.payable_price || productDetailsData?.product?.retail_price,
+    price: price?.price || productDetailsData?.product?.price?.price,
     variation_id:
       productDetailsData?.product?.product_type === 2
         ? selectedVariation?.id
         : null,
-    quantity: quantity,
+    quantity: quantity || 1,
   };
 
   const handleAddToCart = async () => {

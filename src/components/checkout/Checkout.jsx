@@ -178,9 +178,25 @@ export default function Checkout({ mode = "cart" }) {
 
     const stored = localStorage.getItem("buy_now");
     if (stored) {
-      const parsed = JSON.parse(stored);
-      setBuyNowData(parsed);
-      if (!parsed?.slug) {
+      try {
+        const parsed = JSON.parse(stored);
+        setBuyNowData(parsed);
+
+        if (parsed?.product && parsed.product.id) {
+          const prod = parsed.product;
+          const qty = Number(parsed.quantity) || 1;
+          const sub = (Number(prod?.price?.payable_price) || Number(prod?.payable_price) || Number(prod?.retail_price) || 0) * qty;
+          setProductDetailsData({
+            ...prod,
+            quantity: qty,
+          });
+          setDeliveryCharge(0);
+          setGrandTotal(sub);
+          setBuyNowLoading(false);
+        } else if (!parsed?.slug) {
+          setBuyNowLoading(false);
+        }
+      } catch {
         setBuyNowLoading(false);
       }
     } else {
@@ -194,22 +210,21 @@ export default function Checkout({ mode = "cart" }) {
     const fetchProductDetailsData = async (slug) => {
       try {
         const response = await axiosInstance.get(`/product-details/${slug}`);
-        if (response?.data?.status) {
-          const prod = response?.data?.data?.product;
+        const prod = response?.data?.data?.product || response?.data?.product;
+        if (prod && prod.id) {
+          const qty = Number(buyNowData?.quantity) || 1;
+          const payable = Number(prod?.price?.payable_price) || Number(prod?.retail_price) || 0;
           setProductDetailsData({
             ...prod,
-            quantity: buyNowData?.quantity || 1,
+            quantity: qty,
           });
 
-          const sub = (prod?.price?.payable_price || 0) * (buyNowData?.quantity || 1);
-          const ship = sub >= 10 ? 0 : 0; // standard delivery
-          setDeliveryCharge(ship);
-          setGrandTotal(sub + ship);
-        } else {
-          toast.error(response?.data?.status_message);
+          const sub = payable * qty;
+          setDeliveryCharge(0);
+          setGrandTotal(sub);
         }
       } catch (error) {
-        toast.error(error?.message || "Failed to load product");
+        // buyNowData.product is already set as fallback
       } finally {
         setBuyNowLoading(false);
       }

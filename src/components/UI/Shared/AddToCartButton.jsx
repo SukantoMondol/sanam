@@ -7,8 +7,15 @@ const AddToCartButton = ({ product }) => {
   const { addToCart } = useCart();
   const router = useRouter();
 
+  const payablePrice = Number(product?.price?.payable_price) || Number(product?.payable_price) || Number(product?.price) || 0;
+  const origPrice = Number(product?.price?.price) || Number(product?.old_price) || payablePrice;
+
   const cartData = {
     product_id: product?.id,
+    product_name: product?.name || product?.title,
+    photo: product?.photo || product?.image,
+    payable_price: payablePrice,
+    price: origPrice,
     variation_id: product?.product_type === 2 ? product?.product_type : null,
     quantity: 1,
   };

@@ -7,26 +7,32 @@ import axiosInstance from "@/utils/axiosInstance";
 const CartHandler = ({ product }) => {
   const router = useRouter();
   const handleBuyNow = async () => {
+    const payablePrice = Number(product?.price?.payable_price) || Number(product?.payable_price) || Number(product?.price) || 0;
+    const origPrice = Number(product?.price?.price) || Number(product?.old_price) || payablePrice;
+
     localStorage.setItem(
       "buy_now",
-      JSON.stringify({ slug: product?.slug, quantity: 1 })
+      JSON.stringify({
+        slug: product?.slug || product?.id,
+        quantity: 1,
+        product: {
+          id: product?.id,
+          name: product?.name || product?.title,
+          title: product?.name || product?.title,
+          slug: product?.slug || product?.id,
+          photo: product?.photo || product?.image,
+          price: {
+            payable_price: payablePrice,
+            price: origPrice,
+          },
+          payable_price: payablePrice,
+          retail_price: payablePrice,
+          quantity: 1,
+        },
+      })
     );
 
-    if (product?.product_type == 1) {
-      try {
-        await axiosInstance.post("/cart", {
-          product_id: product?.id,
-          variation_id: null,
-          quantity: 1,
-        });
-      } catch (error) {
-        // non-critical side effect; proceed to buy-now regardless
-      }
-
-      router.push("/buy-now");
-    } else {
-      router.push(`/product-details/${product?.slug}`);
-    }
+    router.push("/buy-now");
   };
   return (
     <>

@@ -106,27 +106,32 @@ const ProductVariants = ({
   }, [productDetailsData, initialVariationParams]);
 
   const handleBuyNow = async () => {
+    const prod = productDetailsData?.product || {};
+    const payablePrice = price?.payable_price || prod?.price?.payable_price || prod?.retail_price || 0;
+    const origPrice = price?.price || prod?.price?.price || payablePrice;
+
     localStorage.setItem(
       "buy_now",
       JSON.stringify({
-        slug: productDetailsData?.product?.slug,
-        quantity,
-        variation_id: selectedVariation?.id,
+        slug: prod?.slug || prod?.id,
+        quantity: quantity || 1,
+        variation_id: selectedVariation?.id || null,
+        product: {
+          id: prod?.id,
+          name: prod?.name || prod?.title,
+          title: prod?.name || prod?.title,
+          slug: prod?.slug || prod?.id,
+          photo: prod?.photo || prod?.photos?.[0]?.photo_full,
+          price: {
+            payable_price: payablePrice,
+            price: origPrice,
+          },
+          payable_price: payablePrice,
+          retail_price: payablePrice,
+          quantity: quantity || 1,
+        },
       })
     );
-
-    try {
-      await axiosInstance.post("/cart", {
-        product_id: productDetailsData?.product?.id,
-        variation_id:
-          productDetailsData?.product?.product_type === 2
-            ? selectedVariation?.id
-            : null,
-        quantity,
-      });
-    } catch (error) {
-      // non-critical side effect; proceed to buy-now regardless
-    }
 
     router.push("/buy-now");
   };

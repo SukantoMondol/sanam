@@ -1,143 +1,228 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { toast } from "react-toastify";
-import axiosInstance from "@/utils/axiosInstance";
 import { useDispatch } from "react-redux";
 import { totalProductQuantity } from "@/redux/features/productQuantitySlice";
 import { trackAddToCart } from "@/utils/ga4Ecommerce";
 
-const useCart = () => {
-  const [cart, setCart] = useState({});
-  const dispatch = useDispatch();
-  const [loading, setLoading] = useState(true);
+const CART_STORAGE_KEY = "sanam_cart";
 
-  const updateCartQuantity = (cartData) => {
-    const totalQuantity = cartData?.cart?.reduce(
-      (acc, item) => acc + item?.quantity,
-      0
-    );
+function getLocalCart() {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(CART_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
 
-    dispatch(totalProductQuantity(totalQuantity || 0));
+function saveLocalCart(items) {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items));
+  } catch {}
+}
+
+function calculateSummary(items) {
+  const subTotal = items.reduce(
+    (acc, item) => acc + (Number(item?.payable_price) || 0) * (Number(item?.quantity) || 1),
+    0
+  );
+  const totalQty = items.reduce(
+    (acc, item) => acc + (Number(item?.quantity) || 1),
+    0
+  );
+  const deliveryCharge = subTotal >= 10 ? 0 : 0; // Standard free delivery in Kuwait or configured rule
+
+  return {
+    sub_total: subTotal,
+    total: subTotal + deliveryCharge,
+    total_quantity: totalQty,
+    delivery_charge: deliveryCharge,
   };
+}
 
-  const fetchCart = async () => {
+const useCart = () => {
+  const [cart, setCart] = useState(() => {
+    const items = getLocalCart();
+    return {
+      cart: items,
+      summary: calculateSummary(items),
+    };
+  });
+  const dispatch = useDispatch();
+  const [loading, setLoading] = useState(false);
+
+  const updateCartQuantity = useCallback(
+    (items) => {
+      const totalQty = items.reduce(
+        (acc, item) => acc + (Number(item?.quantity) || 1),
+        0
+      );
+      dispatch(totalProductQuantity(totalQty || 0));
+    },
+    [dispatch]
+  );
+
+  const fetchCart = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await axiosInstance.get("/cart");
-      if (response?.data?.status) {
-        setCart(response?.data?.data);
-        updateCartQuantity(response?.data?.data);
-      } else {
-        setCart({});
-        updateCartQuantity({});
-      }
-    } catch (error) {
-      setCart({});
-      updateCartQuantity({});
+      const items = getLocalCart();
+      const summary = calculateSummary(items);
+      const cartObj = { cart: items, summary };
+      setCart(cartObj);
+      updateCartQuantity(items);
     } finally {
       setLoading(false);
     }
-  };
+  }, [updateCartQuantity]);
 
-  // useEffect(() => {
-  //   if (token) {
-  //     fetchCart();
-  //   }
-  // }, []);
-
-  // Function to add item to cart via API
+  // Function to add item to cart
   const addToCart = async (cartData) => {
     try {
-      const response = await axiosInstance.post("/cart", cartData);
-      if (response?.data?.status) {
-        let cartItems = response?.data?.data?.cart || [];
-        let product = cartItems.find(
-          (item) => item?.product_id === cartData.product_id
-        );
+      const items = getLocalCart();
+      const prodId = cartData.product_id || cartData.id;
+      const varId = cartData.variation_id || null;
+      const qty = Number(cartData.quantity) || 1;
 
+      const existingIndex = items.findIndex(
+        (item) =>
+          String(item.product_id || item.id) === String(prodId) &&
+          String(item.variation_id || "") === String(varId || "")
+      );
+
+      let updatedItems;
+      if (existingIndex > -1) {
+        updatedItems = [...items];
+        updatedItems[existingIndex] = {
+          ...updatedItems[existingIndex],
+          quantity: (Number(updatedItems[existingIndex].quantity) || 0) + qty,
+        };
+      } else {
+        const payablePrice =
+          Number(cartData.payable_price) ||
+          Number(cartData.price?.payable_price) ||
+          Number(cartData.price) ||
+          Number(cartData.retail_price) ||
+          0;
+        const originalPrice =
+          Number(cartData.price?.price) ||
+          Number(cartData.old_price) ||
+          payablePrice;
+
+        const newItem = {
+          id: prodId,
+          product_id: prodId,
+          product_name:
+            cartData.product_name || cartData.name || cartData.title || "Product",
+          photo: cartData.photo || cartData.image || "/assets/images/logo.png",
+          payable_price: payablePrice,
+          price: originalPrice,
+          quantity: qty,
+          variation_id: varId,
+          product_attributes: cartData.product_attributes || [],
+        };
+        updatedItems = [...items, newItem];
+      }
+
+      saveLocalCart(updatedItems);
+      const summary = calculateSummary(updatedItems);
+      const newCartObj = { cart: updatedItems, summary };
+      setCart(newCartObj);
+      updateCartQuantity(updatedItems);
+
+      try {
         trackAddToCart(
           {
-            id: cartData.product_id,
-            name: product?.product_name,
-            category_name: product?.category_name,
-            category_names: product?.category_names,
-            category: product?.category,
-            product_category: product?.product_category,
-            product_category_name: product?.product_category_name,
-            categories: product?.categories || product?.product?.categories,
-            price: {
-              payable_price: product?.payable_price,
-            },
+            id: prodId,
+            name: cartData.product_name || cartData.name,
+            price: { payable_price: cartData.payable_price },
           },
           {
-            quantity: cartData.quantity,
-            price: product?.payable_price,
-            value: product?.payable_price * cartData.quantity,
+            quantity: qty,
+            price: cartData.payable_price,
+            value: (cartData.payable_price || 0) * qty,
           }
         );
+      } catch {}
 
-        fetchCart();
-        toast.success(response?.data?.status_message);
-        return response?.data;
-      } else {
-        toast.error(response?.data?.status_message || "Failed to add to cart");
-        return response?.data;
-      }
+      toast.success("Product added to cart!");
+      return { status: true, data: newCartObj };
     } catch (error) {
-      console.warn("addToCart error:", error?.message);
+      toast.error("Failed to add product to cart");
+      return { status: false };
     }
   };
 
-  // Function to update item in cart via API
+  // Function to update item quantity in cart
   const updateCart = async (updatedData) => {
     try {
-      const response = await axiosInstance.put(`/cart/${updatedData?.id}`, {
-        variation_id: updatedData?.variationId,
-        quantity: updatedData?.quantity,
-      });
+      const items = getLocalCart();
+      const targetId = updatedData?.id || updatedData?.product_id;
+      const newQty = Number(updatedData?.quantity);
 
-      if (response?.data?.status) {
-        toast.success(response?.data?.status_message);
-        fetchCart();
+      let updatedItems;
+      if (newQty <= 0) {
+        updatedItems = items.filter(
+          (item) => String(item.id || item.product_id) !== String(targetId)
+        );
       } else {
-        toast.error(response?.data?.status_message);
+        updatedItems = items.map((item) => {
+          if (String(item.id || item.product_id) === String(targetId)) {
+            return { ...item, quantity: newQty };
+          }
+          return item;
+        });
       }
+
+      saveLocalCart(updatedItems);
+      const summary = calculateSummary(updatedItems);
+      const newCartObj = { cart: updatedItems, summary };
+      setCart(newCartObj);
+      updateCartQuantity(updatedItems);
+
+      toast.success("Cart updated");
+      return { status: true, data: newCartObj };
     } catch (error) {
-      if (error?.status === 422) {
-        toast.error(error?.response?.data?.message);
-      } else {
-        console.warn("updateCart error:", error?.message);
-      }
+      toast.error("Failed to update cart");
     }
   };
 
-  // Function to remove item from cart via API
+  // Function to remove item from cart
   const removeFromCart = async (id) => {
     try {
-      const response = await axiosInstance.delete(`/cart/${id}`);
-      if (response?.data?.status) {
-        toast.success(response?.data?.status_message);
-        fetchCart();
-      } else {
-        toast.error(response?.data?.status_message);
-      }
+      const items = getLocalCart();
+      const updatedItems = items.filter(
+        (item) => String(item.id || item.product_id) !== String(id)
+      );
+
+      saveLocalCart(updatedItems);
+      const summary = calculateSummary(updatedItems);
+      const newCartObj = { cart: updatedItems, summary };
+      setCart(newCartObj);
+      updateCartQuantity(updatedItems);
+
+      toast.success("Item removed from cart");
+      return { status: true, data: newCartObj };
     } catch (error) {
-      console.warn("removeFromCart error:", error?.message);
+      toast.error("Failed to remove item");
     }
   };
 
-  // Function to clear cart via API
+  // Function to clear entire cart
   const clearCart = async () => {
     try {
-      const response = await axiosInstance.get(`/clear-cart`);
-      if (response?.data?.status) {
-        toast.success(response?.data?.status_message);
-        fetchCart();
-      } else {
-        toast.error(response?.data?.status_message);
-      }
+      saveLocalCart([]);
+      const emptyCartObj = {
+        cart: [],
+        summary: { sub_total: 0, total: 0, total_quantity: 0, delivery_charge: 0 },
+      };
+      setCart(emptyCartObj);
+      updateCartQuantity([]);
+      toast.success("Cart cleared");
+      return { status: true };
     } catch (error) {
-      console.warn("clearCart error:", error?.message);
-    } finally {
+      toast.error("Failed to clear cart");
     }
   };
 
