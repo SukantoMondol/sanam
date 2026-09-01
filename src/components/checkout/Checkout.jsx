@@ -22,6 +22,8 @@ import {
   trackSingleProductPurchase,
 } from "@/utils/ga4Ecommerce";
 
+import liveKuwaitAreas from "@/data/liveKuwaitAreas.json";
+
 export default function Checkout({ mode = "cart" }) {
   const isBuyNow = mode === "buyNow";
   const router = useRouter();
@@ -52,7 +54,7 @@ export default function Checkout({ mode = "cart" }) {
   });
 
   const [guestErrors, setGuestErrors] = useState({});
-  const [areasList, setAreasList] = useState([]);
+  const [areasList, setAreasList] = useState(liveKuwaitAreas || []);
 
   // Modals for logged-in users
   const [showAllAddressesModal, setShowAllAddressesModal] = useState(false);
@@ -82,26 +84,12 @@ export default function Checkout({ mode = "cart" }) {
     axiosInstance
       .get("/areas")
       .then((res) => {
-        if (res?.data?.data && Array.isArray(res.data.data)) {
+        if (res?.data?.data && Array.isArray(res.data.data) && res.data.data.length > 0) {
           setAreasList(res.data.data);
         }
       })
       .catch(() => {
-        // Fallback default Kuwait areas if API is unreachable
-        setAreasList([
-          { id: 6, name_en: "Hawalli" },
-          { id: 16, name_en: "Salmiya" },
-          { id: 36, name_en: "Kuwait City" },
-          { id: 97, name_en: "Farwaniya" },
-          { id: 69, name_en: "Al-Ahmadi" },
-          { id: 87, name_en: "Mubarak Al-Kabeer" },
-          { id: 14, name_en: "Jabriya" },
-          { id: 17, name_en: "Salwa" },
-          { id: 12, name_en: "Mishref" },
-          { id: 7, name_en: "Bayann" },
-          { id: 27, name_en: "Sharq" },
-          { id: 34, name_en: "Kaifan" },
-        ]);
+        setAreasList(liveKuwaitAreas || []);
       });
   }, []);
 
@@ -242,6 +230,19 @@ export default function Checkout({ mode = "cart" }) {
     }));
     if (guestErrors[name]) {
       setGuestErrors((prev) => ({ ...prev, [name]: "" }));
+    }
+
+    if (name === "area") {
+      const selectedAreaObj = (areasList || []).find(
+        (a) => a.name_en === value || String(a.id) === String(value)
+      );
+      const fee = Number(selectedAreaObj?.delivery_fee) || 0;
+      setDeliveryCharge(fee);
+
+      const sub = isBuyNow
+        ? (Number(productDetailsData?.price?.payable_price) || Number(productDetailsData?.retail_price) || 0) * (Number(productDetailsData?.quantity) || 1)
+        : Number(cart?.summary?.sub_total) || 0;
+      setGrandTotal(sub + fee);
     }
   };
 
