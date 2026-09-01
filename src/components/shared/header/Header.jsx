@@ -16,9 +16,9 @@ import { useSelector } from "react-redux";
 import logo from "../../../../public/assets/images/logo.png";
 import SearchBar from "./SearchBar";
 import SanamMegaMenu from "./SanamMegaMenu";
-import catalogData from "@/data/allCategoriesCatalog.json";
+import liveCategories from "@/data/liveCategories.json";
 
-const DEFAULT_CATEGORIES = catalogData?.data || [];
+const DEFAULT_CATEGORIES = liveCategories || [];
 
 const FaBars = dynamic(
   () => import("react-icons/fa").then((mod) => mod.FaBars),
@@ -500,7 +500,7 @@ export default function Header() {
           {allCategories.map((cat) => (
             <Link
               key={cat.id}
-              href={`/category/${cat.slug}`}
+              href={`/category/${cat.id || cat.slug}`}
               className="temu-mobile-cat-tab flex-shrink-0 text-decoration-none"
             >
               {cat.name}
@@ -628,7 +628,7 @@ export default function Header() {
               {allCategories.map((category) => (
                 <Link
                   key={category.id}
-                  href={`/category/${category?.slug}`}
+                  href={`/category/${category.id || category.slug}`}
                   className="temu-mobile-cat-link"
                   onClick={closeMobileMenu}
                 >
