@@ -1,0 +1,739 @@
+/* ==========================================================================
+   Storefront App Modern Styles - Sanam Next.js
+   Premium UI: Search Overlay, Image Search, Deals, 5-Star & Infinite Feed
+   ========================================================================== */
+
+:root {
+  --sf-primary: #fb7701;
+  --sf-primary-hover: #e06600;
+  --sf-accent-gold: #ffb800;
+  --sf-accent-green: #13a05c;
+  --sf-accent-red: #e53935;
+  --sf-dark: #1a1a1a;
+  --sf-muted: #767676;
+  --sf-border: #eeeeee;
+  --sf-bg-light: #f8f9fa;
+  --sf-surface: #ffffff;
+  --sf-radius-sm: 8px;
+  --sf-radius-md: 14px;
+  --sf-radius-lg: 20px;
+  --sf-radius-pill: 999px;
+  --sf-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --sf-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --sf-shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.14);
+  --sf-trans: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --------------------------------------------------------------------------
+   1. Search Bar Enhancements & Camera Trigger
+   -------------------------------------------------------------------------- */
+.sf-search-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.sf-search-input-pill {
+  width: 100%;
+  height: 44px;
+  padding: 0 95px 0 44px;
+  border-radius: var(--sf-radius-pill);
+  border: 1.5px solid #e0e0e0;
+  background: var(--sf-surface);
+  font-size: 14.5px;
+  color: var(--sf-dark);
+  outline: none;
+  cursor: pointer;
+  transition: var(--sf-trans);
+}
+
+.sf-search-input-pill:hover,
+.sf-search-input-pill:focus {
+  border-color: var(--sf-primary);
+  box-shadow: 0 0 0 3px rgba(251, 119, 1, 0.12);
+}
+
+.sf-search-left-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.sf-search-actions {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sf-cam-btn {
+  background: none;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--sf-radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  cursor: pointer;
+  transition: var(--sf-trans);
+}
+
+.sf-cam-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--sf-primary);
+}
+
+.sf-search-submit-btn {
+  background: var(--sf-primary);
+  border: none;
+  color: #fff;
+  width: 44px;
+  height: 32px;
+  border-radius: var(--sf-radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--sf-trans);
+}
+
+.sf-search-submit-btn:hover {
+  background: var(--sf-primary-hover);
+  transform: scale(1.03);
+}
+
+/* --------------------------------------------------------------------------
+   2. Instant Search Overlay (Zero-Latency Modal)
+   -------------------------------------------------------------------------- */
+.sf-overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 20, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  animation: sfFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+@keyframes sfFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sf-overlay-panel {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--sf-surface);
+  border-radius: 0 0 var(--sf-radius-lg) var(--sf-radius-lg);
+  box-shadow: var(--sf-shadow-lg);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  animation: sfSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes sfSlideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .sf-overlay-panel {
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+}
+
+.sf-overlay-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--sf-border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sf-overlay-back-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: var(--sf-radius-sm);
+  color: var(--sf-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-overlay-back-btn:hover {
+  background: var(--sf-bg-light);
+}
+
+.sf-overlay-input-wrap {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sf-overlay-input {
+  width: 100%;
+  height: 46px;
+  padding: 0 85px 0 42px;
+  border-radius: var(--sf-radius-pill);
+  border: 1.5px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  background: var(--sf-bg-light);
+  transition: var(--sf-trans);
+}
+
+.sf-overlay-input:focus {
+  background: #fff;
+  border-color: var(--sf-primary);
+  box-shadow: 0 0 0 3px rgba(251, 119, 1, 0.12);
+}
+
+.sf-overlay-input-icon {
+  position: absolute;
+  left: 14px;
+  color: #888;
+  pointer-events: none;
+}
+
+.sf-overlay-actions {
+  position: absolute;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sf-clear-btn {
+  background: none;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-clear-btn:hover {
+  background: #e4e4e4;
+  color: var(--sf-dark);
+}
+
+.sf-overlay-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Sections inside overlay */
+.sf-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.sf-section-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sf-clear-all-link {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sf-clear-all-link:hover {
+  color: var(--sf-accent-red);
+}
+
+/* Chips for Recent Searches & Trends */
+.sf-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.sf-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--sf-bg-light);
+  border: 1px solid #e8e8e8;
+  border-radius: var(--sf-radius-pill);
+  font-size: 13px;
+  color: var(--sf-dark);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--sf-trans);
+}
+
+.sf-chip:hover {
+  background: #f0f0f0;
+  border-color: #d0d0d0;
+  transform: translateY(-1px);
+}
+
+.sf-chip-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Suggestions Product Grid inside Overlay */
+.sf-suggest-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: rgba(251, 119, 1, 0.08);
+  border-radius: var(--sf-radius-md);
+  color: var(--sf-primary);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  transition: var(--sf-trans);
+}
+
+.sf-suggest-cta:hover {
+  background: rgba(251, 119, 1, 0.14);
+}
+
+.sf-suggest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 576px) {
+  .sf-suggest-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.sf-suggest-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: var(--sf-radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--sf-trans);
+  position: relative;
+}
+
+.sf-suggest-card:hover {
+  border-color: var(--sf-primary);
+  box-shadow: var(--sf-shadow-md);
+  transform: translateY(-2px);
+}
+
+.sf-suggest-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.sf-suggest-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sf-suggest-card:hover .sf-suggest-card-img {
+  transform: scale(1.05);
+}
+
+.sf-suggest-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--sf-accent-red);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.sf-suggest-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.sf-suggest-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--sf-dark);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.sf-suggest-prices {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.sf-suggest-price-now {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--sf-primary);
+}
+
+.sf-suggest-price-old {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* --------------------------------------------------------------------------
+   3. Image Search Modal (Camera Visual Search)
+   -------------------------------------------------------------------------- */
+.sf-cam-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: sfFadeIn 0.2s ease;
+}
+
+.sf-cam-modal-card {
+  background: #fff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--sf-radius-lg);
+  padding: 28px;
+  position: relative;
+  box-shadow: var(--sf-shadow-lg);
+  text-align: center;
+}
+
+.sf-cam-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.sf-cam-drop-zone {
+  border: 2px dashed #d6d6d6;
+  border-radius: var(--sf-radius-md);
+  padding: 36px 20px;
+  margin: 18px 0;
+  cursor: pointer;
+  background: var(--sf-bg-light);
+  transition: var(--sf-trans);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sf-cam-drop-zone:hover {
+  border-color: var(--sf-primary);
+  background: rgba(251, 119, 1, 0.04);
+}
+
+.sf-cam-icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(251, 119, 1, 0.12);
+  color: var(--sf-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-cam-spinner {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 3px solid rgba(251, 119, 1, 0.2);
+  border-radius: 50%;
+  border-top-color: var(--sf-primary);
+  animation: sfSpin 0.75s linear infinite;
+  margin: 20px 0;
+}
+
+@keyframes sfSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* --------------------------------------------------------------------------
+   4. Deals Section (Lightning Deals & Clearance Snap Track)
+   -------------------------------------------------------------------------- */
+.sf-deals-container {
+  margin: 28px 0;
+}
+
+.sf-deal-card-box {
+  background: #fff;
+  border-radius: var(--sf-radius-lg);
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  box-shadow: var(--sf-shadow-sm);
+  margin-bottom: 20px;
+}
+
+.sf-deal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sf-deal-badge-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sf-deal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff3e0;
+  color: #e65100;
+  padding: 6px 14px;
+  border-radius: var(--sf-radius-pill);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.sf-deal-badge.clearance {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.sf-deal-timer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  background: #f5f5f5;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.sf-deal-track {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+
+.sf-deal-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.sf-deal-track::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.sf-deal-item {
+  flex: 0 0 170px;
+  scroll-snap-align: start;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: var(--sf-radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--sf-trans);
+}
+
+.sf-deal-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--sf-primary);
+  box-shadow: var(--sf-shadow-md);
+}
+
+.sf-deal-item-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #f7f7f7;
+}
+
+.sf-deal-item-body {
+  padding: 10px;
+}
+
+.sf-deal-item-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--sf-primary);
+}
+
+.sf-deal-item-old {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   5. 5-Star Top-Rated Products Section
+   -------------------------------------------------------------------------- */
+.sf-toprated-section {
+  background: linear-gradient(180deg, #fff9f2 0%, #ffffff 100%);
+  border-radius: var(--sf-radius-lg);
+  padding: 28px 20px;
+  margin: 32px 0;
+  border: 1px solid #ffe8cc;
+}
+
+.sf-toprated-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.sf-toprated-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #d97706;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.sf-toprated-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--sf-dark);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   6. Sticky Filters & Infinite Feed
+   -------------------------------------------------------------------------- */
+.sf-sticky-filters {
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sf-filter-pills {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 4px 0;
+}
+
+.sf-filter-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.sf-filter-btn {
+  background: #f5f5f7;
+  border: 1px solid #e5e5e7;
+  padding: 8px 18px;
+  border-radius: var(--sf-radius-pill);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--sf-trans);
+}
+
+.sf-filter-btn:hover {
+  background: #eee;
+}
+
+.sf-filter-btn.active {
+  background: var(--sf-primary);
+  border-color: var(--sf-primary);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(251, 119, 1, 0.28);
+}
+
+.sf-feed-spinner-wrap {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.sf-feed-end-msg {
+  text-align: center;
+  padding: 36px 0;
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+}
